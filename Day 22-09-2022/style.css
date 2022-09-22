@@ -1,0 +1,65 @@
+
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .no-gutters > .col, .no-gutters >[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+/* Start Header Styling */
+.header{
+    background-color: bisque;
+    padding:2% 5%;
+    padding-right:0 ;
+    margin: 0;
+}
+/* End Header Styling */
+
+/* Start Nav-bar-styling */
+.nav-bar ul{
+    background-color: gray;
+    margin:0;
+    padding:0 2%;
+}
+.nav-bar li{
+    background-color: gray;
+    padding:2%;
+}
+.nav-bar a,.aside-left a{
+    color:white;
+    text-decoration: none;
+}
+.nav-bar li:hover{
+    background-color: rgb(106, 109, 109);
+}
+.nav-bar a:hover{
+    color:white
+}
+
+/* End Nav-bar-styling */
+
+/* aside-left */
+.aside-left a:hover{
+    color:rgb(253, 228, 1);
+}
+
+.aside-left{
+    background-color: rgb(85, 87, 4);
+}
+/* End aside-left-styling */
+
+/* Start articles in main-section */
+.main-section{
+    margin-bottom:2%;
+}
+.main-section-article{
+background-color: rgb(173, 239, 241);
+border-radius: 5px;
+margin:2%;
+text-align: center;
+}
+/* End articles in main-section */
