@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 1%;
+
+        }
+
+        #two {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- USING THREE TABELS -->
+    <div>
+        <!-- Tabel 1 -->
+        <table width=100% id="one">
+            <caption><h1>Tax Invoice</h1></caption>
+            <!-- Row 1 -->
+            <tr>
+                <td width="30%" rowspan="3">Address</td>
+                <td width="10%">
+                    <p>Invoice No.</p>
+                    <p><strong>SINV-2018-00045</strong></p>
+                </td>
+
+                <td width="10%">
+                    <p>Dated</p>
+                    <p><strong>06-01-2019</strong></p>
+                </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>Delivery Note</td>
+                <td>Modes/Terms of Payment</td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+                <td>Supplier's ref</td>
+                <td>Other References</td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr>
+                <td rowspan="4">To Address</td>
+                <td>Buyer's Order No.</td>
+                <td>Dated </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr>
+                <td>Despatch Document No.</td>
+                <td>Dated.</td>
+            </tr>
+
+            <!-- Row 6 -->
+            <tr>
+                <td>Despatched Through</td>
+                <td>Destination</td>
+            </tr>
+            <tr>
+                <td colspan="2">Teams of Delivery</td>
+            </tr>
+
+        </table>
+    </div>
+    <div>
+        <!-- Tabel 2 -->
+        <table id="two">
+            <!-- Row 1 the heading -->
+            <tr>
+                <th width="2%">SI</th>
+                <th width="20%">Particulars</th>
+                <th width="5%">QTY</th>
+                <th width="10%">Rate</th>
+                <th width="10%">VAT</th>
+                <th width="10%">Amount</th>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>1</td>
+                <td>Commercial Rent</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">$6,48789</td>
+                <td class="text-align-right">10.0%</td>
+                <td class="text-align-right">$77.85468</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td>1</td>
+                <td>Commercial Rent</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">10</td>
+                <td class="text-align-right">1</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>1</td>
+                <td>Commercial Rent</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">10</td>
+                <td class="text-align-right">1</td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr>
+                <td>1</td>
+                <td>Commercial Rent</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">12</td>
+                <td class="text-align-right">10</td>
+                <td class="text-align-right">1</td>
+            </tr>
+        </table>
+
+        <!-- 3rd Table -->
+        <table id="three">
+            <!-- Row 1 -->
+            <tr>
+                <td width="34.25%" rowspan="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nihil
+                    natus, iusto architecto alias et veniam itaque omnis accusamus necessitatibus inventore provident
+                    fuga autem harum nesciunt ipsum corrupti soluta tempora?
+                    Nam rem debitis voluptates saepe, aliquam aliquid odio ad qui error labore hic vitae, maxime sed
+                    fuga sit. Tempore veritatis fugit possimus vero quod! Nostrum eaque eius eveniet repellat iusto!
+                    Placeat rem dolores, quas, ad aut consectetur aspernatur, obcaecati libero minima ex iusto
+                    consequuntur mollitia eveniet ullam optio cupiditate architecto id odit! Perspiciatis blanditiis
+                    labore eveniet fugiat saepe ea voluptatem!</td>
+                    <th width="2%">SubTotal</th>
+                    <th width="10%">1,799,568.04256</th>
+                    <th width="10%"> $778.35988</th>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <th>VAT</th>
+                <th>59,826.2368	</th>
+                <th>$25.8764</th>
+
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <th>TOTAL</th>
+                <th>1,859,394.27936</th>
+                <th>$804.23628</th>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td colspan="2">No remarks</td>
+                <td colspan=2 style="text-align:right">for ======</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

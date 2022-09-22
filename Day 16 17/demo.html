@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/626d34d1e7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        div {
+            width: 25%;
+            overflow: auto;
+            background-color: blueviolet;
+            border: 2px solid red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        article {
+            position: relative;
+            z-index: 0;
+        }
+
+        #one {
+            position: absolute;
+            left: 3%;
+        }
+
+        #Two {
+            position: absolute;
+            left: 33%;
+            top: 0%;
+        }
+
+        #Three {
+            position: absolute;
+            left: 63%;
+            top: 0%;
+        }
+
+        article~div {
+            /* display: none; */
+            position: relative;
+            z-index: 1;
+        }
+        #six{
+            position: relative;
+        }
+        .six div{
+            border:1px dashed yellow;
+            background-color: aquamarine;
+            width:100px;
+            height:100px;
+            position: absolute;
+            top:05px;
+            left:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <div id="one">
+            <h1>Div 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ex porro, doloribus, tempore cupiditate
+                ad,
+                consequuntur dolore vero pariatur dolor laudantium impedit vel itaque voluptate. Corrupti asperiores
+                suscipit nulla aliquam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, dolor quos corrupti voluptatum ullam
+                quasi libero delectus dolorum minus tempora nulla laudantium unde magnam accusamus earum, facilis nihil
+                architecto soluta aspernatur, porro fugit eius! Doloribus animi veritatis impedit nulla, quisquam
+                assumenda vero deserunt minima, voluptatum quas ipsum laborum excepturi ut alias laudantium eos, sed
+                error sapiente dignissimos officiis incidunt ullam hic dicta. Dolorum dolores, praesentium deleniti
+                officiis deserunt non aliquid? Illo assumenda voluptatum iure recusandae modi deserunt necessitatibus,
+                possimus veniam.</p>
+        </div>
+
+        <div id="Two">
+            <h1>Div 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ex porro, doloribus, tempore cupiditate
+                ad,
+                consequuntur dolore vero pariatur dolor laudantium impedit vel itaque voluptate. Corrupti asperiores
+                suscipit nulla aliquam?</p>
+        </div>
+
+        <div id="Three">
+            <h1>Div 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ex porro, doloribus, tempore cupiditate
+                ad,
+                consequuntur dolore vero pariatur dolor laudantium impedit vel itaque voluptate. Corrupti asperiores
+                suscipit nulla aliquam?</p>
+        </div>
+    </article>
+    <div id="four">
+        <h1>
+            Div 4
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit aliquam ullam numquam voluptates
+            maiores in soluta quam optio deserunt.
+        </p>
+    </div>
+    <div id="five">
+        <h1>
+            Div 5
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit aliquam ullam numquam voluptates
+            maiores in soluta quam optio deserunt.
+        </p>
+    </div>
+    <div id="six">
+        <div>
+
+        </div>
+        <h1>
+            Div 6
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit aliquam ullam numquam voluptates
+            maiores in soluta quam optio deserunt.
+        </p>
+    </div>
+
+</body>
+
+</html>

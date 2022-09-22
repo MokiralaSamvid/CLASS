@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer,
+        #outer td {
+            border: 2px solid green;
+        }
+
+        #inner,
+        #inner td {
+            border: 2px solid blue;
+        }
+
+        #outer2,#inner2,#inner2-1,td,th{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="outer">
+        <!-- Row1 -->
+        <tr>
+            <td rowspan="3">Table1</td>
+            <td>Table1</td>
+
+        </tr>
+
+        <!-- Row2 -->
+        <tr>
+            <td>
+                <!-- Nested table -->
+                <table id="inner">
+                    <tr>
+                        <td>Table2</td>
+                        <td>Table2</td>
+                    </tr>
+                    <tr>
+                        <td>Table2</td>
+                        <td>Table2</td>
+                    </tr>
+                </table>
+            </td>
+            <!-- End Nested table -->
+        </tr>
+
+        <!-- Row3 -->
+        <td></td>
+        <!-- Row4 -->
+        <tr>
+            <td>Table1</td>
+            <td>Table1</td>
+
+        </tr>
+
+    </table>
+
+    <table id="outer2">
+        <!-- 1st row -->
+        <tr>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+            <th>col4</th>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+            <td>R2I1</td>
+            <td>R2I2</td>
+            <td rowspan="4">
+                <table id="inner2">
+                    <caption>ROW 2:Nested Table1</caption>
+                    <tr>
+                        <th>R1H</th>
+                        <td>item</td>
+                    </tr>
+
+                    <tr>
+                        <th>R2H</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th>R3H</th>
+                        <td>item</td>
+                    </tr>
+                </table>
+            </td>
+            <td>R2I4</td>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <td rowspan="2">
+                <!-- 2nd inner table -->
+                <table id="inner2-1">
+                    <tr>
+                        <th>R1H</th>
+                        <td>item</td>
+                    </tr>
+
+                    <tr>
+                        <th>R2H</th>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="2">R3I2</td>
+            
+            <td rowspan="4">R3I3</td>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>R4I1</td>
+            <td>R4I2</td>
+           
+            <td>R4I3</td>
+        </tr>
+        <tr></tr>
+
+        <!-- 5th row -->
+        <tr>
+            <td colspan="4">Last row of outer table</td>
+            
+        </tr>
+        
+    </table>
+</body>
+
+</html>

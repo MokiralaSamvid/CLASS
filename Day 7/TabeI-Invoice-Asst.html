@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <style>
+        table{
+            width:100%;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-spacing: 0;
+            border-spacing: 0;
+            border-collapse: collapse;
+            padding:0.5% 1%;
+        }
+        .Rborder{
+            border-right:0;
+            text-align: right;
+        }
+        .Lborder{
+            border-left:0;
+            text-align: right;
+        }
+        .text-align-right{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- USING NESTED TABLES -->
+
+    <table id="outer">
+        <!-- We have 8 columns and ---17 rows in this table -->
+     <caption><h1>Tax Invoice</h1></caption>
+
+        <!-- Row 1 -->
+        <tr>
+           
+
+            <td colspan="4" rowspan="3">
+
+                <table id="inner1">
+                    <tr>
+                        <p>Mokirala Samvid</p>
+                    </tr>
+                    <tr>
+                        <p>Software Developer</p>
+                    </tr>
+                    <tr>
+                        <p>Qualminds</p>
+                    </tr>
+                    <tr>
+                        <p>Hyderabad</p>
+                    </tr>
+                </table>
+
+            </td>
+            <td colspan="2">
+                <p><small>Invoice No.</small></p>
+                <p><strong>SINV-2018-00045</strong></p>
+            </td>
+            <td colspan="2">
+                <p><small>Dated.</small></p>
+                <p><strong>06-01-2019</strong></p>
+            </td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td colspan="2">Delivery Note</td>
+            <td colspan="2">Mode/Terms of Payment</td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td colspan="2">Supplier's Ref</td>
+            <td colspan="2">Other References</td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+            <td colspan="4" rowspan="4">
+                <table>
+
+                    <tr>
+                        <p>Customer</p>
+                    </tr>
+                    <tr>
+                        <p><strong>Jeremy Media</strong></p>
+                    </tr>
+                    <tr>
+                        <p>Swimlane road</p>
+                    </tr>
+                    <tr>
+                        <p>PO BOX 321</p>
+                    </tr>
+                    <tr>
+                        <p  style="padding-bottom:7%">Flow chart town</p>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="2">
+                <p>Buyer's Order No.</p>
+            </td>
+            <td colspan="2">
+                <p>Dated</p>
+            </td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+            <td colspan="2">Despatch Document No.</td>
+            <td colspan="2">Dated</td>
+        </tr>
+
+        <!-- Row 6 -->
+        <tr>
+            <td colspan="2">Despatched Through</td>
+            <td colspan="2">Destination</td>
+        </tr>
+        <!-- Row 7 -->
+        <tr>
+            <td colspan="4"  style="padding-bottom:7%">Terms of Delivery</td>
+        </tr>
+
+        <!-- Row 8 the empty row
+        <tr>
+            <td colspan="2"></td>
+        </tr> -->
+
+        <!-- Row 8 -->
+        <tr>
+            <th>SI</th>
+            <th>Particulars</th>
+            <th >QTY</th>
+            <th class="Rborder">Rate</th>
+            <th class="Lborder"></th>
+            <th class="Rborder">VAT</th>
+            <th style="width: 4%;" class="Lborder"></th>
+            <th>Amount</th>
+        </tr>
+
+        <!-- Row 9 -->
+        <tr>
+            <td>1</td>
+            <td>Commercial Rent</td>
+            <td style="text-align: center;">12</td>
+            <td class="Rborder"></td>
+            <td class="Lborder">$6,48789</td>
+            <td class="Rborder" >10.0%</td>
+            <td class="Lborder"></td>
+            <td  class=text-align-right>$77.85468</td>
+        </tr>
+
+        <!-- Row 10 -->
+        <tr>
+            <td>2</td>
+            <td>Residential Rent</td>
+            <td style="text-align: center;">12</td>
+            <td class="Rborder"></td>
+            <td class="Lborder">$50.00</td>
+            <td class="Rborder" >0.0%</td>
+            <td class="Lborder"></td>
+            <td class=text-align-right>$600.00</td>
+
+            <!-- Row 11 -->
+        <tr>
+            <td>3</td>
+            <td>Bulb replacement</td>
+            <td style="text-align: center;">10</td>
+            <td class="Rborder"></td>
+            <td class="Lborder">$8.65052</td>
+            <td class="Rborder">18.0.0%</td>
+            <td class="Lborder"></td>
+            <td class=text-align-right>$86.5052</td>
+
+            <!-- Row 12 -->
+        <tr>
+            <td>4</td>
+            <td>Utility Charges</td>
+            <td style="text-align: center;">1</td>
+            <td class="Rborder"></td>
+            <td class="Lborder">$14.00</td>
+            <td class="Rborder" >18.0.0%</td>
+            <td class="Lborder"></td>
+            <td class=text-align-right>$14.00</td>
+        </tr>
+
+        <!-- Row 13 -->
+        <tr>
+            <td colspan="4" rowspan="3">
+                <p>Amount in Words</p>
+                <p><strong>USD Eight Hundred And Twenty Four Cent only.</strong></p>
+                <p><strong>One Million, Eight Hundred And Fifty Nine Thousand, Four Hundred And Two and Eighty Eight
+                        Cent only.</strong></p>
+            </td>
+            <th style="width:10%">SUB TOTAL</th>
+            <td class=text-align-right colspan="2" ><b>1,799,568.04256</b></td>
+            <td class=text-align-right ><strong>$778.35988</strong></td>
+        </tr>
+
+        <!-- Row 14 -->
+        <th>VAT</th>
+        <td colspan="2"  class=text-align-right ><strong>59,826.2368</strong></td>
+        <td class=text-align-right ><strong>$25.8764</strong></td>
+
+        <!-- Row 15 -->
+        <tr>
+            <th>TOTAL</th>
+            <td colspan="2" class=text-align-right><strong>1,859,394.27936</strong></td>
+            <td class=text-align-right ><strong>$804.23628</strong></td>
+        </tr>
+
+        <!-- Row 16 The Last Row -->
+        <tr >
+            <td colspan="5" style="padding-bottom:5%"><small>No Remarks</small></td>
+            <td class=text-align-right colspan="3" style="padding-bottom:5%;text-align:right">for ========</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

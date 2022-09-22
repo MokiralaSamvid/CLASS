@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputElement</title>
+    <style>
+        section span{
+            background-color: #a4180c;
+            color:white;
+            padding:3% 5%;
+            border-radius:30px ;
+            display: inline-block;
+            width:60%;
+        }
+        section span:hover{
+            cursor: pointer;
+            color:#000000;
+            background-color:rgb(50, 173, 1);
+        }
+
+        p span{
+            background-color: #a4180c;
+            color:white;
+            padding:5% 15%;
+            border-radius:30px ;
+            display: inline-block;
+            width:60%;
+        }
+        p span:hover{
+            cursor: pointer;
+            color:#000000;
+            background-color:rgb(50, 173, 1);
+        }
+        p button{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+            <label for="f-name">Enter your name</label>
+            <input type="text" id="f-name" name="fname" placeholder="sam">
+            <p><input type="button" value="normal button"></p>
+
+        </fieldset>
+
+        <!-- The field-set checkbox -->
+        <fieldset>
+            <legend>Choose your book</legend>
+            <p>
+                <input id="ramayan" name="Yourbook" type="checkbox" value="Ramayan">
+                <label for="ramayan">Ramayan</label>
+            </p>
+            <p>
+                <input id="bharat" name="Yourbook" type="checkbox" value="Mahara-Bharat">
+                <label for="bharat">Maha Bharat</label>
+            </p>
+            <p>
+                <input id="gita" name="Yourbook" type="checkbox" value="BhagavadGita">
+                <label for="gita">BhagavadGita</label>
+            </p>
+            <p>
+                <input id="Bhagavatam" name="Yourbook" type="checkbox" value="Bhagavatam">
+                <label for="Bhagavatam">Bhagavatam</label>
+            </p>
+        </fieldset>
+
+        <!-- Fieldset Radio-Button  -->
+        <fieldset>
+            <legend>Select your country</legend>
+            <p>
+                <input type="radio" id="india" name="country" value="INDIA">
+                <label for="india">India</label>
+            </p>
+            
+            <p>
+                <input type="radio" id="usa" name="country"  value="USA">
+                <label for="usa">USA</label>
+            </p>
+            <p>
+                <input type="radio" id="asa" name="country"  value="ASA" >
+                <label for="asa">ASA</label>
+            </p>
+            <p>
+                <input type="radio" id="psa" name="country"  value="PSA">
+                <label for="psa">PSA</label>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend style="text-align: center;">
+                Image as submit button
+            </legend>
+
+            <input type="image" src="./images/submit-button.PNG" width="100px;">
+
+
+        
+        <button type="submit" style="width:20% ;border: none;background-color: white;"><section>
+            <span >
+                SUBMIT
+            </span>
+        </button>
+        <button>Submit</button>
+        <P>
+            <button type="reset"><span>Reset</span></button>
+        </P>
+    </form>
+</fieldset>
+        
+</body>
+</html>

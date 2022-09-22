@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTag</title>
+    <style>
+        header {
+            border: 2px solid red;
+            background-color: mediumblue;
+            display: flex;
+        }
+
+        header figure {
+            width: 10%;
+            display: inline-block;
+            margin: 0% 5%;
+        }
+
+        header ul {
+
+            list-style: none;
+            background-color: aliceblue;
+
+        }
+
+        header ul li {
+            display: inline;
+            margin: 5%;
+            width: fit-content;
+        }
+
+        header ul li a:hover {
+            color: black;
+            background-color: bisque;
+        }
+
+        header ul li a {
+            text-decoration: none;
+        }
+
+        /* Style gita */
+        .Gita {
+            border: 3px solid brown;
+            background-color: darkolivegreen;
+            color: white
+        }
+
+        article p {
+            display: inline-block;
+        }
+
+        article video {
+            height: 200px;
+            width:50%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure> <img src="./images/krishna.ico" width="20%">
+            <figcaption>KRISHNA</figcaption>
+        </figure>
+        <nav style="display: inline;width:80%;margin-right:1%;">
+            <ul>
+                <li><a href="#G1">Gita Chp-1</a></li>
+                <li><a href="#G2">Gita Chp-2</a></li>
+                <li><a href="#G3">Gita Chp-3</a></li>
+                <li><a href="#G4">Gita Chp-4</a></li>
+                <li><a href="#G5">Gita Chp-5</a></li>
+                <li><a href="#G6">Gita Chp-6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="Gita" id="G1">
+            <h1>GITA-1</h1>
+            <h2>Arjunavishadha Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nulla delectus at quam saepe quia a provident iusto veniam. Quisquam magni dolore iste iure
+                saepe perferendis consequuntur, accusamus enim id placeat dolorem ex eveniet, temporibus itaque
+                obcaecati omnis nesciunt nam. Aliquid deserunt quasi blanditiis natus amet dolore obcaecati mollitia
+                doloremque asperiores ducimus autem harum, sit, veniam enim fugiat pariatur dolores!</p>
+            <video src="./videos/sample.mp4" controls></video>
+        </article>
+        <article class="Gita" id="G2">
+            <h1>GITA-2</h1>
+            <h2>Sankhya Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est,
+                voluptates. Cumque quaerat eum dolor quae accusantium quos nihil velit magnam exercitationem amet
+                deleniti quibusdam quam vitae voluptatum sequi necessitatibus non rerum, illo explicabo. Quas,
+                consequatur, ipsam, eos deserunt iure sunt tempora suscipit officiis at eius quaerat. Magni magnam sit
+                suscipit accusantium veritatis! Non error maiores est, iure omnis quaerat id?</p>
+                <video src="./videos/sample.mp4" controls poster="./images/gita.PNG"></video>
+        </article>
+        <article class="Gita" id="G3">
+            <h1>GITA-3</h1>
+            <h2>Karma Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi.</p>
+                <video poster="./images/gita.PNG" controls muted autoplay>
+                    <source src="./videos/Krishnum.mp4">
+                    <source src="">
+                </video>
+        </article>
+        <article class="Gita" id="G4">
+            <h1>GITA-4</h1>
+            <h2>Gnana Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi.</p>
+        </article>
+        <article class="Gita" id="G5">
+            <h1>GITA-5</h1>
+            <h2>Sanyasa Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi.</p>
+        </article>
+        <article class="Gita" id="G6">
+            <h1>GITA-6</h1>
+            <h2>Dhyana Yogah</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ducimus sit dignissimos possimus, iure
+                sequi veniam ratione reiciendis est modi.</p>
+        </article>
+
+    </section>
+</body>
+
+</html>

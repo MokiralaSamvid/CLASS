@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+    <style>
+        table,th,td{
+            border:2px solid;
+            border-collapse: collapse;
+            border-spacing:2% ;
+            
+        }
+        table{
+            width: 100%;
+        }
+        td,th{
+            padding: 2%;
+            width: 10%;
+            
+        }
+        .b-bottom{
+            border-bottom: 0;
+        }
+        .b-top{
+            border-top: 0;
+        }
+        .text-align-center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Row1 -->
+        <tr >
+            <th class="b-bottom"></th>
+            <th class="b-bottom">I</th>
+            <th class="b-bottom">II</th>
+            <th class="b-bottom">III</th>
+            <th class="b-bottom" rowspan="2">12:00-12:40</th>
+            <th class="b-bottom">IV</th>
+            <th class="b-bottom">V</th>
+            <th class="b-bottom">VI</th>
+            <th class="b-bottom">VII</th>
+        </tr>
+
+        <!-- Row2 -->
+        <tr >
+            <th class="b-top">Day/Period</th>
+            <th class="b-top">9:30-10:20</th>
+            <th class="b-top">10:20-11:10</th>
+            <th class="b-top">11:10-12:00</th>
+            <th class="b-top">12:40-1:30</th>
+            <th class="b-top">1:30-2:20</th>
+            <th class="b-top">2:20-3:10</th>
+            <th class="b-top">3:10-4:00</th>
+        </tr>
+
+        <!-- Row3 -->
+        <tr>
+            <th>Monday</th>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+            <th rowspan="6">LUNCH</th>
+            <td class="text-align-center" colspan="3">LAB</td>
+            <td>Physics</td>
+        </tr>
+
+        <!-- Row4 -->
+        <tr>
+            <th>Tuesday</th>
+            <td class="text-align-center" colspan="3">LAB</td>
+            <td>English</td>
+            <td>Chemistry</td>
+            <td>Maths</td>
+            <td>SPORTS</td>
+        </tr>
+
+        <!-- Row5 -->
+        <tr>
+            <th>Wednesday</th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>chemistry</td>
+            <td class="text-align-center" colspan="3">LIBRARY</td>
+        </tr>
+
+        <!-- Row6 -->
+        <tr>
+            <th>Thursday</th>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Chemistry</td>
+            <td class="text-align-center" colspan="3">LAB</td>
+            <td>Maths</td>
+        </tr>
+
+        <!-- Row7 -->
+        <tr>
+            <th>Friday</th>
+            <td class="text-align-center" colspan="3">LAB</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Physics</td>
+        </tr>
+
+        <!-- Row8 -->
+        <tr>
+            <th>Saturday</th>
+            <td>English</td>
+            <td>Chemistry</td>
+            <td>Maths</td>
+            <td class="text-align-center" colspan="3">SEMINAR</td>
+            <td>SPORTS</td>
+        </tr>
+    </table>
+</body>
+</html>

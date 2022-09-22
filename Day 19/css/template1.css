@@ -1,0 +1,116 @@
+/* ==================== Mobile devices 320px ================== */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.sec-one{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-one article{
+color:white;
+background-color:#23C5CC ;
+padding:2%;
+margin:1% 0%;
+width:100%;
+}
+.sec-one div img{
+    width:100%;
+    margin:1% 0%;
+}
+
+.sec-one div p{
+    width: 100%;
+    border: 2px solid #23C5CC;
+    margin:1%;
+    color:#23C5CC;
+    padding: 20%;
+    text-align: center;
+    font-size: 10vw;
+}
+.sec-two  img{
+width: 100%;
+}
+.sec-two article{
+    background-color: #F86942;
+    color: white;
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+}
+
+.sec-two article button{
+    background-color: white;
+    color: black;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+}
+.sec-two article button:hover {
+background-color:#636363ab; 
+cursor: pointer;
+}
+footer{
+    background-color: #000;
+    color:white;
+}
+footer p{
+    padding:1%;
+    margin: auto;
+    width: fit-content;
+}
+/* ================ Tablets 768(px) ============================== */
+@media(min-width:760px){
+    #sec-one article{
+        width:30%;
+        font-size: 3vw;
+    }
+    #sec-one div {
+        width:70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sec-one div img{
+        width:45%;
+        margin: 2%;
+    }
+    #sec-one div p{
+        width:45%;
+        padding:5%;
+        margin:2%;
+        font-size: 3vw;
+    }
+
+    .sec-two{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 2% 0;;
+    }
+    .sec-two img{
+        width: 28%;
+        margin-left: 4%;
+    }
+    .sec-two article{
+        width:65%;margin:0;
+    }
+    .sec-two article div{
+        width:70%;
+        margin:auto;
+        font-size: 2vw;
+    }
+}
+
+/* ================= laptops (1020 px)============================= */
+@media(min-width:1020px){
+}
+
+/* ================= Desktops (1440 px)  ============================== */
+
+/* ================  Larger Displays  (2560px) ============================== */

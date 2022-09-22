@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutStyles</title>
+    <style>
+        /* Style body */
+        body {
+            background-color: bisque;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* End style body */
+        /* Style header */
+        header {
+            border: 2px solid rgb(0, 255, 255);
+            padding: 0.5%;
+            background-color: peru;
+        }
+
+        /* End style header */
+
+        /* Start Styling ul */
+        #navone ul {
+            list-style-type: none;
+            border: 2px solid rgb(0, 255, 255);
+            background-color: gray;
+        }
+
+        /* End Styling ul */
+
+        /* set navigation elements to display in line */
+        #navone ul li {
+            display: inline-block;
+            text-align: center;
+            width: 30%;
+            border: 2px solid rgb(189, 177, 177)
+        }
+
+        /* End setting navigation elements to display in line*/
+
+        /* Style links of nav bar */
+        #navone ul li a {
+            background-color: gray;
+            color: greenyellow;
+        }
+
+        #navone ul li:hover {
+            background-color: rgb(147, 172, 164);
+        }
+
+        #navone ul li a:hover {
+            background-color: greenyellow;
+            color: gray;
+            cursor: pointer;
+        }
+
+        /* End Styling links of nav bar */
+
+        /* Style the Main body */
+        .main-sec {
+            background-color: rebeccapurple;
+            border: 2px red;
+            border-style: solid;
+            display: flex;
+        }
+
+        /* End styling the main body */
+
+        /* Style left aside */
+        #asideleft {
+
+            border: 3px solid yellow;
+        }
+
+        /* End styling left aside */
+
+        /* Style right aside */
+        #asideright {
+            float: right;
+            border: 3px solid yellow;
+        }
+
+        /* End styling right aside */
+
+        /* Styling article in side main-sec */
+        .main-sec article {
+            border: 2px dotted pink;
+        }
+
+        /* End Styling article in side main-sec */
+
+        #asideleft a {
+            text-decoration: none;
+            color: white;
+            width: 100%;
+        }
+
+        #asideleft ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer {
+            border: 3px solid orangered;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add Header -->
+    <header>
+        I am Header
+    </header>
+    <!-- End header -->
+
+    <!-- Add navigation bar -->
+    <nav id="navone">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <!-- End Adding navigation bar -->
+
+    <!-- Add main section -->
+    <section class="main-sec">
+        <!-- Add left sidebar -->
+        <aside id="asideleft">
+            <a onclick="hidebox()" style="cursor: pointer;">&#9776</a>
+
+            <ul id="boxesList">
+                <li> <a href="#A-1">Article 1</a></li>
+                <li><a href="#A-2">Article 2</a></li>
+                <li><a href="#A-3">Article 3</a></li>
+            </ul>
+
+        </aside>
+        <!-- End left sidebar -->
+
+        <!-- Add Article 1-->
+        <article id="A-1">
+            <h1>Article1</h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in quisquam dicta
+            repellat
+            cumque! Officiis rem ex quae totam aperiam eum porro, reprehenderit nisi maiores autem dicta, beatae
+            pariatur ducimus est officia neque? Quidem, ipsam! Obcaecati itaque saepe mollitia voluptatum?Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Illum eaque possimus nulla nihil eius, repellendus tempora
+            numquam hic, molestiae quidem magnam doloremque cum temporibus quia quasi voluptatibus molestias dolor
+            deserunt pariatur autem. Dolor accusamus nobis dolorum? Accusamus quos tenetur, magnam dolor nisi placeat,
+            quisquam veniam blanditiis neque qui soluta pariatur architecto vel ipsa vitae fugit exercitationem illo.
+            Nihil culpa tempora error quo praesentium, aperiam vero ratione reiciendis, sequi molestiae distinctio nam
+            debitis, at in repellat doloribus ut? Ex, magnam nesciunt!
+        </article>
+        <!-- End Article 1 -->
+        <!-- Add Article 2-->
+        <article id="A-2">
+            <h1>Article2</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in quisquam dicta
+            repellat
+            cumque! Officiis rem ex quae totam aperiam eum porro, reprehenderit nisi maiores autem dicta, beatae
+            pariatur ducimus est officia neque? Quidem, ipsam! Obcaecati itaque saepe mollitia voluptatum?Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Laborum architecto vitae error! Non dolorum, voluptates aliquid
+            deleniti tempora porro magnam voluptate a asperiores quis nostrum recusandae exercitationem placeat corrupti
+            quidem voluptatibus officiis tenetur reiciendis doloremque pariatur assumenda eius inventore, laborum
+            suscipit. Ipsam, sequi incidunt numquam tenetur velit molestiae. Quis, aliquam nemo praesentium vitae eaque
+            dignissimos itaque error dolore magni enim numquam assumenda optio ipsa autem. Autem repellat eius sint
+            officiis vitae, doloribus fugiat modi iste consequatur dolorum. Voluptatibus, et deserunt?
+        </article>
+        <!-- End Article 2 -->
+        <!-- Add Article 3-->
+        <article id="A-3">
+            <h1>Article3</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in quisquam dicta
+            repellat
+            cumque! Officiis rem ex quae totam aperiam eum porro, reprehenderit nisi maiores autem dicta, beatae
+            pariatur ducimus est officia neque? Quidem, ipsam! Obcaecati itaque saepe mollitia voluptatum?Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Laboriosam enim molestiae culpa pariatur reprehenderit fugit
+            provident inventore reiciendis modi eius soluta assumenda eos suscipit et at, doloribus odio amet molestias
+            aliquam dicta beatae quis est! Deleniti aut alias ullam labore fugiat architecto? Nemo possimus eveniet
+            officiis dignissimos commodi odio sapiente ex necessitatibus, modi sed cumque quod iure suscipit et tempore,
+            labore delectus magnam! Veniam expedita amet veritatis, adipisci recusandae nesciunt accusantium dolores non
+            iusto quae eos nihil laborum officia temporibus?
+        </article>
+        <!-- End Article 3 -->
+
+        <!-- Add right sidebar -->
+        <aside id="asideright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda ipsum
+            repellendus
+            .</aside>
+        <!-- End right sidebar -->
+    </section>
+    <!-- End Main section -->
+    <footer>
+        I am Footer
+        <address>email:msam@gmail<br>
+            Mokirala Samvid
+
+        </address>
+    </footer>
+
+
+    <script>
+        flag = true;
+
+        function hidebox() {
+            if (flag) {
+                let x = document.getElementById("boxesList").style.display = "none";
+                flag = false; innerwidth = 0;
+
+            }
+            else {
+                let x = document.getElementById("boxesList").style.display = "block";
+                flag = true;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

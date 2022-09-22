@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin:0;
+}
+header h1{
+    font-weight: bold;
+}
+h2{
+    border-bottom: 1px solid;
+}
+form fieldset{
+    border: none;
+}
+form input{
+    width:100%;
+}
+.address div div #country{
+    width: 100%;
+}
+
+@media(min-width:760px){
+    .contact-info div,.address div,.products div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Contact-and-Address fieldset{
+        width:100%;
+    }
+    .contact-info div p ,.address div p{
+        width:45%;
+    }
+    .address div div {
+        display: inline-block;
+        width: 45%;
+    }
+
+   .outer fieldset{
+    width: 100%;
+   }
+    #item-1,#item-2,#item-3{
+        width:305%;
+    }
+    .notes textarea{
+        width:100%;
+    }
+}
+
+@media(min-width:1400px){
+    .Contact-and-Address,.outer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Contact-and-Address fieldset,.outer fieldset{
+        width:45%;
+    }
+}
+

@@ -1,0 +1,461 @@
+/* Universal selector */
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* Start styling section header-nav  */
+
+body {
+    background-image: url(/Day18/images/back-img0.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#header-nav div {
+    max-width: 400px;
+}
+
+/* Add padding for header */
+header {
+    padding: 15% 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid;
+}
+
+/* Set header to inline */
+header figcaption {
+    display: inline;
+    font-style: italic;
+}
+
+/* End Set header to inline */
+
+/* Start styling article */
+
+#header-nav article h1 {
+    border-left: 5px solid #fed85f;
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+#header-nav article a {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    color: black;
+}
+
+/* End styling article */
+/* End styling section header-nav  */
+
+/* Start Styling section Weight-Loss */
+/* Start Article-1 */
+#weight-loss article {
+    padding: 25px;
+    padding-right: 0;
+    margin-left: 10px;
+    max-width: 500px;
+}
+
+#weight-loss article h1 {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+#weight-loss article a {
+    border-bottom: 1px solid;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* End Article-1 */
+
+/* Start Style weight-loss figures */
+#weight-loss figure {
+    text-align: center;
+    padding: 15px 5px;
+    margin: 5px;
+    color: white;
+    height: 300px;
+}
+
+#fig1 {
+    background-color: #5ABCBF;
+}
+
+#fig2 {
+    background-color: #6BC75D;
+}
+
+#fig3 {
+    background-color: #B23C8A;
+}
+
+#weight-loss figure h2 {
+    font-weight: normal;
+}
+
+#weight-loss div img {
+    width: 100%;
+    z-index: -1;
+}
+
+#weight-loss {
+    position: relative;
+}
+
+#pos {
+    position: relative;
+    z-index: 1;
+    bottom: 95px;
+    left: 18%;
+    padding: 0 5%;
+    max-width: 65%;
+    background-color: #fff;
+}
+
+/* End Style weight-loss figures */
+/* End Styling section Weight-Loss */
+
+/* ------------- Start Styling section the-best-way---------------- */
+#the-best-way figure {
+    position: relative;
+}
+
+#the-best-way img {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+/* ------------- End Styling section the-best-way---------------- */
+
+/* ------------- Start Styling section take-challange  */
+#take-challange {
+    text-align: center;
+    margin-top: 25%;
+}
+
+#take-challange div figure {
+    padding: 5%;
+}
+
+#take-challange article,
+#Ten-simple-ways article {
+    margin: auto;
+    width: 60%;
+}
+
+/* ------------- End Styling section take-challange  */
+
+/* ------------- Start Styling section Ten-simple-ways ----------- */
+#Ten-simple-ways {
+    margin-top: 5%;
+    padding-top: 5%;
+    width: 100%;
+}
+
+#Ten-simple-ways img {
+    width: 100%;
+    margin: 2%;
+}
+
+/* ------------- End Styling section Ten-simple-ways ----------- */
+
+/* -------------- Start Styling form --------------------------- */
+#form {
+    background-color: #EBF8F9;
+    text-align: center;
+    margin: 2%;
+    padding: 5%;
+}
+
+#form input,
+textarea {
+    padding: 2%;
+    margin: 2% auto;
+    border-color: #5ABCBF;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+}
+
+#form button {
+    display: block;
+    background-color: #5ABCBF;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding: 2%;
+    border: none;
+}
+
+/* -------------- End Styling form --------------------------- */
+
+/* --------------- Start Styling Footer ---------------------- */
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer div {
+    background-color: #5ABCBF;
+    padding: 20px;
+}
+
+footer div article {
+    margin: 50px;
+}
+
+footer div +p {
+    border-top: 1px white solid;
+    padding: 30px;
+    text-align: center;
+    background-color: #5ABCBF;
+    margin-top: 0;
+}
+footer figure{
+    text-align: center;
+}
+footer mark {
+    color: yellow;
+    background-color: black;
+    text-decoration: underline;
+}
+
+/* --------------- End Styling Footer ---------------------- */
+
+
+/* ============================= Tablets =====================*/
+
+
+
+@media(min-width:760px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Start Style weight-loss figures */
+    #weight-loss {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #weight-loss article {
+        width: 45%;
+        margin: 2%;
+    }
+
+    #weight-loss figure {
+        width: 45%;
+        margin: 2%;
+    }
+
+    #weight-loss div img {
+        width: 50%;
+        position: relative;
+        left: 50%;
+    }
+
+    #pos {
+        position: relative;
+        top: 10px;
+        height: 350px;
+        padding: 0;
+        left: 75px;
+        width: 50%;
+    }
+
+    /* Style the-best-way image */
+
+    #the-best-way img {
+        position: absolute;
+        bottom: -5px;
+        height: 300px;
+    }
+
+    /* End Style the-best-way image */
+    /* End Style weight-loss figures */
+
+    /* ------------- Start Styling section take-challange  */
+    #take-challange div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #take-challange article{
+        margin-top:15%
+    }
+
+    /* ------------- End Styling section take-challange  */
+
+    /* ------------- Start Styling section Ten-simple-ways ----------- */
+
+    #Ten-simple-ways figure div {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: flex-start;
+        height: 149vh;
+        width: 100%;
+    }
+
+    #Ten-simple-ways figure article {
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+
+    #Ten-simple-ways figure div img {
+        margin: 0;
+        width: 47%;
+        margin: 1%;
+    }
+
+    /* ------------- End Styling section Ten-simple-ways ----------- */
+
+
+
+}
+
+/*================================ Laptops ===========================*/
+
+
+/* Start Style weight-loss figures */
+@media(min-width:991px) {
+
+    /* Adjust backimage */
+    body {
+        background-size: contain;
+    }
+
+    #weight-loss article {
+        width: 25%;
+    }
+
+    #weight-loss figure {
+        width: 18%;
+    }
+
+    /* End Style weight-loss figures */
+
+    /* Style the-best-way-img */
+    #the-best-way img {
+        height: 500px;
+        position: absolute;
+        top: -281px;
+    }
+
+    /* End the-best-way-img */
+
+    #Ten-simple-ways figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Ten-simple-ways figure div {
+        width: 60%;
+        height: 92vh;
+    }
+
+    #Ten-simple-ways figure article {
+        width: 40%;
+    }
+
+    #Ten-simple-ways figure article img {
+        height: 39.5vh;
+    }
+
+    /* --------------- Start Styling Footer ---------------------- */
+    footer div div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* --------------- End Styling Footer ---------------------- */
+}
+
+/* ========================= DeskTop ====================================== */
+
+
+@media(min-width:1440px) {
+
+    #Ten-simple-ways figure div {
+        width: 60%;
+        height: 97vh;
+    }
+
+    #Ten-simple-ways figure article {
+        width: 40%;
+        height: 97vh;
+    }
+
+    #Ten-simple-ways figure article img {
+        height: 45.5vh;
+    }
+}
+
+@media(min-width:1900px) {
+
+    #Ten-simple-ways figure div {
+        width: 40%;
+        height: 1000px;
+    }
+
+    #Ten-simple-ways figure article {
+        width: 40%;
+        max-height: 90vh;
+    }
+
+    #Ten-simple-ways figure article img {
+        height: 400px;
+    }
+    #weight-loss{
+        position: relative;
+    }
+    #pos{
+        position: absolute;
+        left:0px;
+        top:100%;
+        left:5%;
+    }
+    #the-best-way img {
+        position: relative;
+     top:10%;
+     z-index: 0;
+    }
+    #take-challange article{
+        margin-top:15%;
+        z-index: 3;
+    }
+
+}
+@media(min-width:2300px) {
+
+    #Ten-simple-ways figure div {
+        width: 40%;
+        height: 1500px;
+    }
+
+    #Ten-simple-ways figure article {
+        width: 40%;
+        height: 1500px;
+    }
+
+    #Ten-simple-ways figure article img {
+        height: 545px;
+    }
+
+    #pos{
+        position: absolute;
+        left:0px
+    }
+}

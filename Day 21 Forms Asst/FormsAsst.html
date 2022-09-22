@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Form</title>
+    <link rel="stylesheet" href="./Forms.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Request for Quote
+        </h1>
+    </header>
+    <form action="">
+        <div class="Contact-and-Address">
+            <fieldset class="contact-info">
+                <h2>CONTACT INFORMATION</h2>
+                <div>
+                    <p><input type="text" name="fname" id="fname" placeholder="Firstname*" required></p>
+                    <p><input type="text" name="lname" id="lname" placeholder="Lastname*" required></p>
+                    <p><input type="email" name="mail" id="mail" placeholder="Email*" required></p>
+                    <p> <input type="number" name="phno" id="phno" placeholder="Phone"></p>
+                </div>
+            </fieldset>
+
+            <fieldset class="address">
+                <h2>ADDRESS</h2>
+                <p><input type="text" name="line-1" id="line-1" placeholder="Street line 1*" required></p>
+                <p><input type="text" name="line-2" id="line-2" placeholder="Street line 2*" required></p>
+                <div>
+                    <p><input type="text" name="city" id="city" placeholder="City*" required></p>
+                    <p><input type="text" name="state" id="state" placeholder="State / Province*" required></p>
+                    <p><input type="number" name="line-1" id="line-1" placeholder="Postal / Zip code*" required></p>
+                    <div>
+                        <select name="country" id="country">
+                            <option value="india">INDIA</option>
+                            <option value="india">USA</option>
+                            <option value="india">ASA</option>
+                            <option value="india">PSA</option>
+                        </select>
+                        <label for="country">Country*</label>
+                    </div>
+                </div>
+        </div>
+
+        </fieldset>
+
+        <section class="outer">
+            <fieldset>
+                <h2>PRODUCTS</h2>
+                <div class="products">
+                    <div>
+                        <p><input type="text" name="item-1" id="item-1" placeholder="Item #1 name"></p>
+                        <p><input type="text" name="item-1-qty" id="item-1-qty" placeholder="Item #1 quantity"></p>
+                    </div>
+                    <div>
+                        <p><input type="text" name="item-2" id="item-2" placeholder="Item #2 name"></p>
+                        <p><input type="text" name="item-2-qty" id="item-2-qty" placeholder="Item #2 quantity"></p>
+                    </div>
+                    <div>
+                        <p><input type="text" name="item-3" id="item-3" placeholder="Item #3 name"></p>
+                        <p><input type="text" name="item-3-qty" id="item-3-qty" placeholder="Item #3 quantity"></p>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="notes">
+                <h2>NOTES</h2>
+                <p><label for="additional-comments">Additional comments or questions </label></p>
+                <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+            </fieldset>
+        </section>
+    </form>
+</body>
+
+</html>

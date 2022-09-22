@@ -1,0 +1,17 @@
+div{
+    border:2px solid red;
+    width:fit-content;
+    padding:3px;
+    box-sizing:border-box;
+}
+div p{
+    border: 1px solid black;
+    margin: auto;
+    width:min-content;
+    padding:2px;
+    box-sizing: border-box;
+}
+
+section p{
+    color:yellow;
+}

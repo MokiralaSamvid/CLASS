@@ -1,0 +1,16 @@
+@media(min-width:760px) and (max-width:991px){
+    *{
+        box-sizing: border-box;
+    }
+    #weight-loss{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #weight-loss article{
+        width:40%;
+    }
+    #weight-loss figure{
+        width:40%;
+    }
+}

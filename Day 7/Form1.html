@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input {
+            margin: 0% 1%;
+            /* padding:8px 16px; */
+        }
+
+        section {
+            display: inline-table;
+            margin: 0% 2%;
+        }
+
+        #contact {
+            width: 30%;
+        }
+
+        #address {
+            width: 60%;
+        }
+
+        #products {
+            width: 50%;
+        }
+
+        #notes {
+            width: 40%
+        }
+
+        .heading {
+            margin-bottom: 0%;
+        }
+
+        fieldset {
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+            margin: 8px 0%
+        }
+
+        button {
+            margin: 0% 5%;
+            padding: 1%;
+            background-color: #2a8fc9;
+            color: white;
+            border: none;
+            border-radius: 5%;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a form -->
+    <form action="">
+        <!-- Create Section and Fieldset-1 Contact information-->
+        <section id="contact">
+            <p class="heading">CONTACT INFORMATION</p>
+            <fieldset>
+                <p><input type="text" placeholder="First name*"></p>
+                <p><input type="text" placeholder="Last name*"></p>
+                <p><input type="email" placeholder="Email*"></p>
+                <p><input type="tel" placeholder="Phone"></p>
+            </fieldset>
+        </section>
+        <!-- End Section  Fieldset-1 Contact information -->
+
+        <!--Start Section and Fieldset  Address -->
+        <section id="address">
+            <p class="heading">ADDRESS</p>
+            <fieldset>
+                <!-- <table>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Street line 1*"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="City*">
+                    </td>
+
+                    <td>
+                        <input type="text" placeholder="State / Province*">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Postal / Zip code*">
+                    </td>
+
+                    <td>
+                        <input type="text" placeholder="Please Select*">
+                    </td>
+                </tr>
+            </table> -->
+                <p>
+                    <input type="text" placeholder="Street line 1*" size="70%">
+                </p>
+
+                <p>
+                    <input type="text" placeholder="City*" size="31%">
+                    <input type="text" placeholder="State / Province*" size="31%">
+                </p>
+                <p>
+                    <input type="text" placeholder="Postal / Zip code*" size="31%">
+                    <!-- <input type="text" placeholder="Please Select Country*" size="31%"> -->
+                    <select name="drop" id="" style="width:22.5%;margin-left:1%">
+                        <option value="-- Please select --">-- Please select --</option>
+                        <option value="India">INDIA</option>
+                        <option value="India">USA</option>
+                        <option value="India">PSA</option>
+                        <option value="India">ISA</option>
+                    </select>
+                    <label for="drop" style="position: relative; top:20px;right:120px;">Country*</label>
+
+                </p>
+            </fieldset>
+        </section>
+        <!--End Section Fieldset  Address -->
+
+        <!-- Add Section and field set Products  -->
+        <section id="products">
+            <p class="heading">PRODUCTS</p>
+            <fieldset>
+                <p>
+                    <input type="text" placeholder="Item #1 name" size="30%">
+                    <input type="text" placeholder="Item #1 quantity" size="15%">
+                </p>
+                <p>
+                    <input type="text" placeholder="Item #2 name" size="30%">
+                    <input type="text" placeholder="Item #2 quantity" size="15%">
+                </p>
+                <p>
+                    <input type="text" placeholder="Item #3 name" size="30%">
+                    <input type="text" placeholder="Item #3 quantity" size="15%">
+                </p>
+            </fieldset>
+        </section>
+        <!-- End Section and fieldset Products  -->
+
+        <!-- Add Section and fieldset  Notes -->
+        <section id="notes">
+            <p class="heading">NOTES</p>
+
+            <!-- <label for="">Additional comments or questions</label> -->
+            <fieldset>
+                <p style="margin:0;"><small>Additional comments or questions</small></p>
+                <textarea name="" id="" cols="45" rows="10"></textarea>
+            </fieldset>
+        </section>
+        <!-- End Section and fieldset  Notes -->
+
+        <!-- Add Request Quote button -->
+        <div>
+            <a>
+                <button>
+                    REQUEST QUOTE
+                </button>
+            </a>
+        </div>
+        <!-- End Request Quote button -->
+
+    </form>
+</body>
+
+</html>

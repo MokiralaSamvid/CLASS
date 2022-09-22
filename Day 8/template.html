@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE</title>
+    <style>
+        header span {
+            color: white;
+            padding: 0.5%;
+            background-color: red;
+            width: fit-content;
+            margin-left: 25%;
+            border-radius: 20px;
+            padding: 5px 16px;
+
+        }
+
+        header {
+            border: 3px solid;
+            padding: 8px 0px;
+
+            background-color: black;
+        }
+
+        header p {
+            color: white;
+            display: inline;
+        }
+
+        nav {
+
+            background-color: red;
+            display: flex;
+        }
+
+        nav img {
+            margin: 0.5% 5%
+        }
+
+        nav a {
+            padding: 2%;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav a:hover {
+            color: red;
+            background-color: white;
+        }
+
+        /* Style 2nd part. */
+        #one {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #one div {
+            width: 35%;
+            margin: 1% 10%;
+        }
+
+        #one article {
+            width: 35%;
+            margin: 1%;
+        }
+
+        /* End 2nd part. */
+
+        /* Style sec-2 */
+        #sec-two div {
+            background-color: black;
+            color: white;
+            height: 50%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #sec-two {
+            display: flex;
+            padding: 2%;
+            margin: 5%;
+        }
+
+        #sec-two article {
+            margin: 3%;
+        }
+
+        #sec-two p {
+            padding: 2%;
+        }
+
+        .text-align-center {
+            text-align: center;
+
+        }
+
+        /* End styling sec-2 */
+        footer {
+            padding: 1% 15%;
+        }
+
+        #sec-one div {
+            color: white;
+            position: relative;
+            bottom: 400px;
+            left: 70px;
+            width: 20%;
+        }
+        #sec-bottom div{
+            color:rgb(247, 247, 247);
+            position:relative;
+            left:55%;bottom:400px;
+            width:30%;
+            text-align:justify;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <span>I am header</span>
+        <p> How we are responding to COVID-19. </p>
+    </header>
+    <!-- nav bar -->
+    <nav>
+        <img width="05%"
+            src="https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="">
+        <a href="">
+            <p>Home</p>
+        </a>
+        <a href="">
+            <p>About</p>
+        </a>
+        <a href="">
+            <p>Site1</p>
+        </a>
+        <a href="">
+            <p>Site2</p>
+        </a>
+        <a href="">
+            <p>Site3</p>
+        </a>
+    </nav>
+    <!-- Section-1 The image part -->
+    <section id="sec-one">
+        <img width=100% height=50% src="./hill.jpg" alt="">
+        <div>
+            <h1>Serving You since 1989.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore atque veritatis id libero odio
+                assumenda eveniet quae ipsam impedit!</p>
+        </div>
+    </section>
+    <!-- End Section-1 The image part -->
+
+    <!-- Start section paragraph before tiles part -->
+    <section id="one" style="display:flex;">
+        <div>
+            <p>WAYS TO SUPPORT</p>
+            <h1>Support Acme Outdoors.</h1>
+        </div>
+
+        <article>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, quia et odio quis exercitationem
+            laborum deleniti ducimus velit ullam ipsa.
+        </article>
+    </section>
+    <!-- End section paragraph before tiles part -->
+
+    <!--Start Section  Tiles -->
+    <section id="sec-two">
+        <article>
+
+            <div>
+                <p class="text-align-left">01</p>
+                <p class="text-align-center">SHOP PRODUCTS</p>
+                <p class="text-align-right"></p>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta blanditiis placeat voluptates voluptate,
+                similique architecto doloremque quod quis quasi, repellendus quidem deleniti, autem neque magni
+            </p>
+        </article>
+
+        <article>
+            <div>
+                <p class="text-align-left">02</p>
+                <p class="text-align-center">DONATE</p>
+                <p class="text-align-right"></p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis, modi eos iure maxime amet libero
+                veritatis sequi dolores debitis, sit asperiores accusamus, obcaecati consectetur sapiente molestiae hic
+            </p>
+        </article>
+
+        <article>
+            <div>
+                <p class="text-align-left">03</p>
+                <p class="text-align-center">BUY GIFT CARDS</p>
+                <p class="text-align-right"></p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto obcaecati eius laborum deleniti quam
+                dignissimos sint molestiae ad consectetur adipisci ratione porro dolor vel alias error nobis explicabo
+            </p>
+        </article>
+
+
+    </section>
+    <!-- End Section Tiles -->
+
+    <!-- Start section bottom fig -->
+    <section id="sec-bottom">
+        <img width="100%"
+            src="https://images.pexels.com/photos/7907038/pexels-photo-7907038.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="">
+        <div>
+            <h1>How we're keeping you safe during COVID-19</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, minus vitae nemo dolorum eveniet
+                consequuntur blanditiis officia fugit, harum tempore maiores quia asperiores necessitatibus velit,
+                doloremque iure cupiditate pariatur aspernatur.</p>
+        </div>
+    </section>
+
+    <!-- End section bottom fig -->
+    <footer>
+        <p style="margin-bottom:0"><small>All Products</small></p>
+        <h1 style="margin-top:0">Open 24/7/365</h1>
+    </footer>
+</body>
+
+</html>

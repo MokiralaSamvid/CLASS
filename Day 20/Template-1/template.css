@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+   
+}
+
+header {
+    background-color: cornflowerblue;
+    padding: 2% 10%;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: indianred;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 1%;
+}
+
+nav ul li:hover {
+    background-color: gray;
+}
+
+/* -----------  Start The Green Block ----------------- */
+
+.Green-block {
+    background-color: #3CCC2C;
+    color: white;
+}
+
+/* Start Article */
+.Green-block article {
+    margin: auto;
+    padding: 2% 5%;
+    text-align: center;
+}
+
+.Green-block button {
+    background-color: #FB0A15;
+    color: white;
+    border: none;
+    padding: 2%;
+    width: 70%;
+}
+
+.Green-block img {
+    width: 100%;
+}
+
+/* End Article */
+/* -----------  End The Green Block ----------------- */
+
+/* -----------  Start The Red Block ----------------- */
+.Red-block {
+    background-color: #FB0A15;
+    color: white;
+    padding: 5%;
+}
+
+/* Start Article */
+.Red-block article {
+    padding: 5% 2%;
+    margin: auto;
+    width: 70%;
+
+}
+
+.Red-block article h1 {
+    font-size: 2em;
+}
+
+.Red-block article button {
+    background-color: #F1A40E;
+    color: white;
+    border: none;
+    padding: 5%;
+    width: 100%;
+}
+
+/* End Article */
+/* -----------  End The Red   Block ----------------- */
+
+/* -----------  Start The Section Education-and-Learning ----------------- */
+.Education-and-Learning {
+    background-color: #fff;
+    padding: 5% 2%;
+    padding-bottom: 0;
+}
+
+/* Start h1 */
+.Education-and-Learning h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 0%;
+}
+
+.Education-and-Learning div {
+    text-align: center;
+}
+
+.Education-and-Learning section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start article styling */
+.Education-and-Learning section article {
+    margin: auto;
+    text-align: center;
+}
+
+.Education-and-Learning section h2 {
+    color: white;
+    border-radius: 100%;
+    width: 10%;
+
+    margin: auto;
+    padding: 2% 0;
+}
+
+.Education-and-Learning section :nth-of-type(odd) h2 {
+    background-color: #FB0A15;
+}
+
+.Education-and-Learning section :nth-of-type(even) h2 {
+    background-color: #2290F7;
+}
+
+/* End article styling */
+/* -----------  End The Section Education-and-Learning ----------------- */
+
+/* ------------  Start Get-in-Touch ------------------------------------ */
+.Get-in-Touch{
+background-color: #fff;
+margin: 0;
+padding: 2% 5%;
+margin-top: 2%;
+}
+.Get-in-Touch h1{
+    margin-top: 0;
+    text-align: center;
+    font-weight: 200%;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Get-in-Touch ul{
+    list-style: none;
+    margin:1% 0;
+    padding: 0;
+}
+.Get-in-Touch ul li{
+    display: inline;
+    padding:1%;
+    background-color:#F1A40E ;
+    margin:1% 2%;
+    border-radius: 100%;
+}
+.Get-in-Touch article{
+    margin:5% auto;
+}
+.Get-in-Touch form{
+    margin-top: 2%;
+}
+.Get-in-Touch form input,textarea{
+    border:none;
+    border-bottom: 1px solid;
+    width: 100%;
+
+}
+.Get-in-Touch form input[type=checkbox]{
+    width:auto;
+}
+.Get-in-Touch form p {
+    text-align: center;
+}
+.Get-in-Touch form p button{
+    background-color: #F1A40E;
+    color: white;
+    padding:2% 10%;
+    width:100%;
+    border: none;
+}
+.Get-in-Touch form .label{
+    text-align: left;
+}
+/* ------------  End Get-in-Touch ------------------------------------ */
+/* ------------ Start Styling Footer ---------------------------------------- */
+footer{
+    background-color:#333333 ;
+    color: white;
+    padding: 2% 0%;
+    font-size: 50%;
+    text-align: center;
+}
+footer p{
+    width:70%;
+    margin:auto;
+    margin-top: 2%;;
+}
+footer a{
+    color: #2290F7;
+}
+footer a:hover{
+    text-decoration: none;
+    color:#8d8a8a
+}
+/* ------------ End Styling Footer ---------------------------------------- */
+
+/* ====================  tablets ========================= */
+@media(min-width:760px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 25%;
+    }
+
+    .Green-block img {
+        width: 100%;
+    }
+
+    .Green-block div {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* Start the Red-box */
+    .Red-block article {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .Red-block div {
+        width: 50%;
+    }
+
+    /* End the Red-box */
+
+    /* Start Education-and-Learning */
+    .Education-and-Learning section article{
+        margin: 1%;
+        width:40%
+    }
+    /* End Education-and-Learning */
+
+
+    .Get-in-Touch div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Get-in-Touch div article{
+        width:43%;
+        margin: 2%;
+    }
+    .Get-in-Touch div form{
+        width:43%
+    }
+    footer{
+        font-size: 100%;
+    }
+}
+
+
+/* ====================  Laptops ========================= */
+@media(min-width:1024px) {}
+
+/* ====================  Desktops ========================= */
+@media(min-width:1440px) {
+    .Education-and-Learning section article{
+        margin: 1%;
+        width:22%
+    }
+}

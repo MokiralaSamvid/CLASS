@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #a94848;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .box {
+            background-color: #959083;
+            color: #3103e7;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+ 
+        ul a {
+            color: yellow;
+            text-decoration: none;
+            padding: 10px;
+            margin: 20px;
+            margin-left: 0px;
+        }
+
+        ul a:hover {
+            background-color: #959083;
+        }
+
+        li::marker {
+            content: "\2B1B";
+            font-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 onclick="hidebox()" style="cursor: pointer;">click me &#9776</h1>
+        <div id="boxesList">
+
+        <ul >
+            <li><a href="#box1" target="_blank">Box1</a></li>
+            <li><a href="#box2">Box2</a></li>
+            <li><a href="#box3">Box3</a></li>
+            <li><a href="#box4">Box4</a></li>
+            <li><a href="#box5">Box5</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class=box id="box1">
+        <h1>BOX1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde aliquam a sed nobis tenetur, illo
+            rerum, laboriosam impedit exercitationem eum quasi perferendis, atque quod optio alias. Possimus, illum
+            recusandae ab, officia maiores at omnis iste nulla iusto, nam odio. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Enim veniam aperiam, magnam esse maiores id! Eligendi tempore modi quas pariatur est
+            obcaecati atque voluptates quidem at odio suscipit, provident in fugit dolorum deserunt doloremque ad! Sequi
+            odit eum alias amet!</p>
+    </div>
+
+    <div class="box" id="box2">
+        <h1>BOX2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta cupiditate neque iusto officiis
+            asperiores necessitatibus, fugit beatae sapiente, nostrum eaque vel deserunt temporibus omnis repellendus
+            sint
+            similique doloremque, ipsam dolores assumenda. Atque minus mollitia adipisci molestias est dolorum ut.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis pariatur quibusdam nam, rem non,
+            labore officia tenetur, numquam explicabo rerum molestias? Repellendus accusantium molestias nihil mollitia.
+            Recusandae nulla alias, ipsum omnis doloremque et itaque illo, dolores rerum facere inventore.</p>
+    </div>
+
+    <div class="box" id="box3">
+        <h1>BOX3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta cupiditate neque iusto officiis
+            asperiores necessitatibus, fugit beatae sapiente, nostrum eaque vel deserunt temporibus omnis repellendus
+            sint
+            similique doloremque, ipsam dolores assumenda. Atque minus mollitia adipisci molestias est dolorum ut. Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Voluptas culpa dolorem in molestiae obcaecati, fugiat ut
+            rem porro sequi doloribus placeat laboriosam deleniti magni! Beatae, eum? Saepe magnam sit rem harum unde
+            non, eaque consequatur doloribus? Voluptatum sint distinctio rem.</p>
+    </div>
+
+    <div class="box" id="box4">
+        <h1>BOX4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta cupiditate neque iusto officiis
+            asperiores necessitatibus, fugit beatae sapiente, nostrum eaque vel deserunt temporibus omnis repellendus
+            sint
+            similique doloremque, ipsam dolores assumenda. Atque minus mollitia adipisci molestias est dolorum ut. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Tempore, fugiat harum optio quo suscipit cumque, vero
+            esse illo facere nobis amet dolores, culpa quia ipsam deserunt necessitatibus distinctio dignissimos minus
+            minima? Fugit error dolorem similique illum minus amet, soluta possimus.</p>
+    </div>
+
+    <div class="box" id="box5">
+        <h1>BOX5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta cupiditate neque iusto officiis
+            asperiores necessitatibus, fugit beatae sapiente, nostrum eaque vel deserunt temporibus omnis repellendus
+            sint
+            similique doloremque, ipsam dolores assumenda. Atque minus mollitia adipisci molestias est dolorum ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat facilis architecto dolorum, iste,
+            consequuntur beatae, molestias officia sequi repudiandae eaque necessitatibus accusamus illum error quae
+            cumque animi. Minima similique consequuntur, architecto illum fugit quidem vero vel aspernatur modi
+            expedita!</p>
+    </div>
+<script>
+        flag=true;
+
+    function hidebox(){
+        if(flag){
+            let x=document.getElementById("boxesList").style.display="none";
+            flag=false;
+
+        }
+        else{
+            let x=document.getElementById("boxesList").style.display="block";
+            flag=true;
+
+        }
+      
+
+    }
+</script>
+</body>
+
+</html>
