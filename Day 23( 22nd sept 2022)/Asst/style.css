@@ -106,7 +106,7 @@ header p {
 
 /* --------------- Start Styling section the easy-way ------------- */
 .easy-way {
-    background-color: #f0edee;
+    background-color: #f1f1f186;
     /* #f0edee */
     ;
 }
@@ -142,7 +142,7 @@ header p {
 /* --------------- Start four-items ----------------------------- */
 .four-items {
     background: #000;
-    margin: 2% 0%
+    margin-bottom:2%;
 }
 
 .four-items img {
@@ -321,6 +321,9 @@ footer div {
         left: 50%;
     } */
 
+    .easy-way{
+        margin-top:-100px;
+    }
     .We-create {
         position: relative;
         z-index: -1;

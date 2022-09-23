@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: relative;
+            background-color: rgb(252, 4, 4);
+            display: flex;
+            height: 350px;
+        }
+
+        .main div {
+            background-color: violet;
+            position: relative;
+            /* float: left; */
+
+            width: 18%;
+            margin: 2%;
+        }
+
+        .main div div {
+            /* float: left; */
+            background-color: aqua;
+            width: 100%;
+            position: absolute;
+            /* top: -30px; */
+        }
+
+        .main-2 {
+            background-color: indigo;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2%;
+            ;
+            /* height:400px; */
+        }
+
+        .main-2>div {
+            position: relative;
+            background-color: cadetblue;
+            height: 800px;
+            width: 13.66%
+        }
+
+        .main-2 div>div {
+            position: absolute;
+            background-color: bisque;
+            top: 2%;
+            left: 50%;
+        }
+
+        .main-3{
+            background-color: darkorange;
+            width:30%;
+            /* margin:auto; */
+            position: relative;
+            padding:2%;
+        }
+        .main-3::before{
+            content: "H";
+            font-size: 3em;
+            position: relative;
+            left:40%;bottom:50px;
+            height:50px;
+            background-color: blue;
+            border: 2px slateblue solid;
+            border-radius: 100%;
+            padding:1% 4%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./images/img1-backimg-1.png" alt="">
+    </div>
+    <div class="main">
+
+        <div class="one">
+            <div>
+                <h1>Div-1</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, necessitatibus nulla fugiat
+                    voluptates, corporis natus enim possimus quidem ipsum qui veniam porro voluptatibus reiciendis non
+                    quo
+                    quibusdam facilis beatae unde.</p>
+            </div>
+        </div>
+        <div class="Two">
+            <div>
+                <h1>Div-2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, necessitatibus nulla fugiat
+                    voluptates, corporis natus enim possimus quidem ipsum qui veniam porro voluptatibus reiciendis non
+                    quo
+                    quibusdam facilis beatae unde.</p>
+            </div>
+
+        </div>
+        <div class="Three">
+            <div>
+                <h1>Div-3</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, necessitatibus nulla fugiat
+                    voluptates, corporis natus enim possimus quidem ipsum qui veniam porro voluptatibus reiciendis non
+                    quo
+                    quibusdam facilis beatae unde.</p>
+            </div>
+        </div>
+        <div class="Four">
+            <div>
+                <h1>Div-4</h1>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, necessitatibus nulla fugiat
+                    voluptates, corporis natus enim possimus quidem ipsum qui veniam porro voluptatibus reiciendis non
+                    quo
+                    quibusdam facilis beatae unde.</p>
+            </div>
+        </div>
+        <div class="Five">
+            <div>
+                <h1>Div-5</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, necessitatibus nulla fugiat
+                    voluptates, corporis natus enim possimus quidem ipsum qui veniam porro voluptatibus reiciendis non
+                    quo
+                    quibusdam facilis beatae unde.</p>
+            </div>
+        </div>
+
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam similique perspiciatis ex vero tempora quos
+        molestiae optio alias voluptas hic sequi illo expedita odit laboriosam saepe quidem, reiciendis nesciunt
+        vitae!
+    </p>
+
+    <div class="main-2">
+        <div>
+            <div class="div-1">
+                <h1>Div-1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+        <div>
+            <div class="div-2">
+                <h1>Div-2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+        <div>
+            <div class="div-3">
+                <h1>Div-3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+        <div>
+            <div class="div-4">
+                <h1>Div-4</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+        <div>
+            <div class="div-5">
+                <h1>Div-5</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+        <div>
+            <div class="div-6">
+                <h1>Div-6</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem quo perspiciatis
+                    aspernatur quia nobis repudiandae commodi. Sunt magnam repudiandae odit nobis laboriosam omnis,
+                    incidunt nisi eaque possimus asperiores magni.</p>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laborum labore error amet esse eum, quisquam
+        voluptatem ducimus omnis vero magni vitae debitis harum architecto veritatis reiciendis cum rerum nulla?</p>
+
+
+    <div class="main-3">
+        <h1>Another div</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nisi accusantium quis earum architecto
+            doloremque, hic nostrum, possimus doloribus expedita voluptates molestias nihil velit voluptas modi
+            voluptatem necessitatibus pariatur quisquam.</p>
+    </div>
+</body>
+
+</html>
