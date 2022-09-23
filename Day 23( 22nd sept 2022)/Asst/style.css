@@ -138,7 +138,8 @@ header p {
 }
 .four-items img{
 width:100%;
-filter:brightness(0.5);
+/* filter:brightness(0.5); */
+filter:grayscale(100);
 }
 .item-2,.item-4{
     color:gray;
@@ -188,9 +189,63 @@ padding: 3%;
     padding-bottom: 0;
 }
 .ever-tried img{
-    width:100%;
+    /* width:100%; */
+    width: 106%;
+    height: 343px;
 }
 /*---------------- End Styling ever-tried ------------------------*/
+
+/* --------------- Start Style section our-products -------------------- */
+.our-products {
+    background-image: url(./images/img15-backimg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-products div {
+    /* background-color: rgb(26 25 25 / 47%); 
+     */
+     background: rgba(0, 0, 0, 0.767);
+    padding: 1%;
+}
+.our-products div article{
+    color:white;
+    margin:5% auto;
+    width:min-content;
+    text-align: center;
+    border:1px solid rgb(119, 119, 119);
+    padding:3%;
+}
+.our-products div article h1{
+    font-size: 2em;
+}
+/* --------------- End section our-products -------------------- */
+
+/*---------------- Start Styling Maps part --------------------- */
+.maps{
+    background-color: #000;
+    color: white;
+    padding:5%;
+}
+.maps article{
+    padding: 2% 5%;;
+}
+.maps article p:nth-child(3){
+    color:rgba(136, 81, 59, 0.849);
+}
+/*---------------- End Styling Maps part --------------------- */
+
+/*---------------- Start Styling Footer -----------------------*/
+footer{
+    background-color: #313131;
+    color:rgb(207, 207, 207);
+    text-align: center;
+    padding:1%;
+}
+footer div{
+    margin:1% auto;
+}
+/*---------------- End Styling Footer -----------------------*/
 
 
 
@@ -271,11 +326,12 @@ padding: 3%;
     .ever-tried{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        /* align-items: center; */
     }
     .ever-tried>*{
         width:46%;
         margin:0% 2%;
+        height:700px;
     }
     .ever-tried section div{
         display:flex;
@@ -287,8 +343,34 @@ padding: 3%;
     }
     .ever-tried img{
         height:700px;
+        width: 116%;
     }
-    
+    .our-products div article{
+        width:80%;
+        font-size: 1.25em;
+    }
+
+    .maps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .maps article{
+        width:25%;
+        margin:auto;
+    }
+    .maps iframe{
+        width:60%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer>*{
+        width:33.33%;
+    }
 }
 
 /*========================== Laptops-1 large (min-width:1020px) ===================*/
@@ -357,11 +439,15 @@ padding: 3%;
         width:21%;
     }
     .ever-tried img{
-        height:700px;
-        width:116%;
+        height: 670px;
+        width: 117%;
     }
-    .ever-tried{
-        height:700px;
+    .ever-tried >*{
+        height:670px;
+    }
+    .our-products div article{
+        width:70%;
+        font-size: 1.5em;
     }
 }
 
