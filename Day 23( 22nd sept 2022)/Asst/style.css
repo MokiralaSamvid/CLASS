@@ -135,6 +135,7 @@ header p {
 /* --------------- Start four-items ----------------------------- */
 .four-items{
     background: #000;
+    /* margin:2% 0% */
 }
 .four-items img{
 width:100%;
@@ -231,7 +232,8 @@ padding: 3%;
     padding: 2% 5%;;
 }
 .maps article p:nth-child(3){
-    color:rgba(136, 81, 59, 0.849);
+    /* color:rgba(136, 81, 59, 0.849); */
+    color: #a89398;
 }
 /*---------------- End Styling Maps part --------------------- */
 
@@ -434,6 +436,9 @@ footer div{
     .easy-way-articles{
         width:60%;
         padding-top:5%;
+    }
+    .four-items,.four-items>*,.four-items img{
+        height:325px;
     }
     .product-figures figure{
         width:21%;
