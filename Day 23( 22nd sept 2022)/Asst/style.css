@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'MyWebFont';
-    src:  url("./Font-family/AstonMartinFlare_W_Rg.woff2") format('woff2')
-  }
+    src: url("./Font-family/AstonMartinFlare_W_Rg.woff2") format('woff2')
+}
 
 /* Set initially all box-sizing to border box */
 * {
@@ -10,14 +10,15 @@
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-.red-color{
-    color:#fd2150;
+.red-color {
+    color: #fd2150;
 }
-.italic-syle{
+
+.italic-syle {
     font-style: italic;
 }
 
-body{
+body {
     padding: 0%;
     margin: 0%;
 }
@@ -100,100 +101,119 @@ header p {
     font-size: 50px;
     color: white;
 }
+
 /*---------------- End Styling the Section the four-cards--------- */
 
 /* --------------- Start Styling section the easy-way ------------- */
-.easy-way{
-    background-color: #f0edee ;
+.easy-way {
+    background-color: #f0edee;
     /* #f0edee */
     ;
 }
+
 .easy-way img {
-    max-width:100%;
+    max-width: 100%;
 }
 
-.easy-way-articles{
-    padding:10% 3%;
-    padding-bottom:2% ;
+.easy-way-articles {
+    padding: 10% 3%;
+    padding-bottom: 2%;
 }
-.easy-way-article-1,.easy-way-article-1+div>article{
-    margin:2% 0;
-    padding:0 2%;
+
+.easy-way-article-1,
+.easy-way-article-1+div>article {
+    margin: 2% 0;
+    padding: 0 2%;
     background-color: white;
 }
 
-.easy-way-articles div{
+.easy-way-articles div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.easy-way-articles div article{
-    width:48%;
+
+.easy-way-articles div article {
+    width: 48%;
 }
+
 /* --------------- End Styling section the easy-way ------------- */
 
 /* --------------- Start four-items ----------------------------- */
-.four-items{
+.four-items {
     background: #000;
-    /* margin:2% 0% */
+    margin: 2% 0%
 }
-.four-items img{
-width:100%;
-/* filter:brightness(0.5); */
-filter:grayscale(100);
+
+.four-items img {
+    width: 100%;
+    /* filter:brightness(0.5); */
+    filter: grayscale(100);
 }
-.item-2,.item-4{
-    color:gray;
-    padding:1% 2%;
+
+.item-2,
+.item-4 {
+    color: gray;
+    padding: 1% 2%;
     margin: 0;
 }
+
 /* --------------- Start four-items------------------- */
 
 /* --------------- Start Section products --------------*/
-.products{
-    margin: 3% ;
-}
-.products .info{
-text-align: center;
-margin-bottom: 5%;
+.products {
+    margin: 3%;
 }
 
-.products figure img{
-    width:100%;
+.products .info {
+    text-align: center;
+    margin-bottom: 5%;
 }
+
+.products figure img {
+    width: 100%;
+}
+
 /* --------------- End Section products --------------*/
 
 /* --------------  Style the section the new-product -------------- */
-.new-product{
-margin:3%;
-padding: 3%;
+.new-product {
+    margin: 3%;
+    padding: 3%;
 }
-.new-product div{
-    margin:auto;
+
+.new-product div {
+    margin: auto;
 }
-.new-product figure{
-    margin:0%;
+
+.new-product figure {
+    margin: 0%;
 }
-.new-product figure img{
-    max-width:100%;
+
+.new-product figure img {
+    max-width: 100%;
 }
-.new-product ol{
+
+.new-product ol {
     padding: 5%;
     color: grey;
 }
+
 /* --------------  End  the section the new-product -------------- */
 
 /*---------------- Start Styling ever-tried ------------------------*/
-.ever-tried{
+.ever-tried {
     background-color: #ECECEA;
     padding: 2% 5%;
     padding-bottom: 0;
 }
-.ever-tried img{
+
+.ever-tried img {
     /* width:100%; */
     width: 106%;
     height: 343px;
 }
+
 /*---------------- End Styling ever-tried ------------------------*/
 
 /* --------------- Start Style section our-products -------------------- */
@@ -206,47 +226,56 @@ padding: 3%;
 .our-products div {
     /* background-color: rgb(26 25 25 / 47%); 
      */
-     background: rgba(0, 0, 0, 0.767);
+    background: rgba(0, 0, 0, 0.767);
     padding: 1%;
 }
-.our-products div article{
-    color:white;
-    margin:5% auto;
-    width:min-content;
+
+.our-products div article {
+    color: white;
+    margin: 5% auto;
+    width: min-content;
     text-align: center;
-    border:1px solid rgb(119, 119, 119);
-    padding:3%;
+    border: 1px solid rgb(119, 119, 119);
+    padding: 3%;
 }
-.our-products div article h1{
+
+.our-products div article h1 {
     font-size: 2em;
 }
+
 /* --------------- End section our-products -------------------- */
 
 /*---------------- Start Styling Maps part --------------------- */
-.maps{
+.maps {
     background-color: #000;
     color: white;
-    padding:5%;
+    padding: 5%;
 }
-.maps article{
-    padding: 2% 5%;;
+
+.maps article {
+    padding: 2% 5%;
+    ;
 }
-.maps article p:nth-child(3){
+
+.maps article p:nth-child(3) {
     /* color:rgba(136, 81, 59, 0.849); */
     color: #a89398;
 }
+
 /*---------------- End Styling Maps part --------------------- */
 
 /*---------------- Start Styling Footer -----------------------*/
-footer{
+footer {
     background-color: #313131;
-    color:rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
     text-align: center;
-    padding:1%;
+    padding: 1%;
 }
-footer div{
-    margin:1% auto;
+
+footer div {
+    margin: 1% auto;
 }
+
 /*---------------- End Styling Footer -----------------------*/
 
 
@@ -260,21 +289,27 @@ footer div{
         justify-content: space-between;
         position: relative;
         z-index: 1;
-        height:750px;
+        height: 750px;
+    }
+
+    .fourcards div {
+        position: relative;
+        width: 48%;
     }
 
     .fourcards article {
-        width: 48%;
+        /* width: 48%; */
         position: absolute;
+        top:-100px;
     }
 
-    .card-1 {
+    /* .card-1 {
         top: -100px
     }
 
     .card-2 {
-        left: 50%;
-        top: -100px;
+        left: 50%; 
+         top: -100px;
     }
 
     .card-3 {
@@ -284,113 +319,133 @@ footer div{
     .card-4 {
         top: 320px;
         left: 50%;
-    }
+    } */
 
     .We-create {
         position: relative;
         z-index: -1;
     }
 
-    .four-items{
+    .four-items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .four-items>*{
-        width:45%;
-        padding-top: 0 ;
+
+    .four-items>* {
+        width: 45%;
+        padding-top: 0;
     }
-   
+
     /* Start products */
-    .product-figures{
+    .product-figures {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    .product-figures figure{
-        width:46%;
-        margin:1% 2%;
+
+    .product-figures figure {
+        width: 46%;
+        margin: 1% 2%;
     }
-    .products img{
-        height:400px;
+
+    .products img {
+        height: 400px;
     }
+
     /* End products */
 
-    .new-product{
-        display:flex;
+    .new-product {
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .new-product >*{
+
+    .new-product>* {
         width: 50%;
     }
-    .ever-tried{
+
+    .ever-tried {
         display: flex;
         flex-wrap: wrap;
         /* align-items: center; */
     }
-    .ever-tried>*{
-        width:46%;
-        margin:0% 2%;
-        height:700px;
+
+    .ever-tried>* {
+        width: 46%;
+        margin: 0% 2%;
+        height: 700px;
     }
-    .ever-tried section div{
-        display:flex;
+
+    .ever-tried section div {
+        display: flex;
         flex-wrap: wrap;
-        }
-    .ever-tried section div>*{
-        width:46%;
-        margin:2%;
     }
-    .ever-tried img{
-        height:700px;
+
+    .ever-tried section div>* {
+        width: 46%;
+        margin: 2%;
+    }
+
+    .ever-tried img {
+        height: 700px;
         width: 116%;
     }
-    .our-products div article{
-        width:80%;
+
+    .our-products div article {
+        width: 80%;
         font-size: 1.25em;
     }
 
-    .maps{
+    .maps {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        
+
     }
-    .maps article{
-        width:25%;
-        margin:auto;
+
+    .maps article {
+        width: 25%;
+        margin: auto;
     }
-    .maps iframe{
-        width:60%;
+
+    .maps iframe {
+        width: 60%;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-wrap: wrap;
     }
-    footer>*{
-        width:33.33%;
+
+    footer>* {
+        width: 33.33%;
     }
 }
 
 /*========================== Laptops-1 large (min-width:1020px) ===================*/
 @media(min-width:1020px) {
-     /* Start Styling the easy-way */
-     .easy-way{
+
+    /* Start Styling the easy-way */
+    .easy-way {
         display: flex;
         justify-content: space-between;
     }
-    .easy-way img{
+
+    .easy-way img {
         max-width: 50%;
     }
-    .easy-way-articles{
-        width:50%;
+
+    .easy-way-articles {
+        width: 50%;
     }
-    .four-items>*{
-        width:25%;
+
+    .four-items>* {
+        width: 25%;
     }
+
     /* End Styling the easy-way */
 }
 
@@ -407,51 +462,62 @@ footer div{
     .fourcards {
         height: 320px;
     }
-
-    .fourcards article {
+    .fourcards div{
         width: 23%;
-        position: absolute;
+    }
+    .fourcards article {
+        width: 100%;
+        /* position: absolute; */
         top: -200px;
     }
-    .card-2 {
+
+    /* .card-2 {
         left: 25%;
-        /* top:0 */
+        
     }
 
     .card-3 {
         left: 50%;
-        /* top:0 */
+        
     }
 
     .card-4 {
         left: 75%;
-        /* top:0 */
+        
+    } */
+
+    .easy-way img {
+        width: 40%;
+        height: 500px;
+
     }
 
-    .easy-way img{
-        width: 40%;
-        height:500px;
-        
+    .easy-way-articles {
+        width: 60%;
+        padding-top: 5%;
     }
-    .easy-way-articles{
-        width:60%;
-        padding-top:5%;
+
+    .four-items,
+    .four-items>*,
+    .four-items img {
+        height: 325px;
     }
-    .four-items,.four-items>*,.four-items img{
-        height:325px;
+
+    .product-figures figure {
+        width: 21%;
     }
-    .product-figures figure{
-        width:21%;
-    }
-    .ever-tried img{
+
+    .ever-tried img {
         height: 670px;
         width: 117%;
     }
-    .ever-tried >*{
-        height:670px;
+
+    .ever-tried>* {
+        height: 670px;
     }
-    .our-products div article{
-        width:70%;
+
+    .our-products div article {
+        width: 70%;
         font-size: 1.5em;
     }
 }
