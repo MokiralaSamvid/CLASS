@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Apply blue color */
+.color-blue {
+    color: #1D9BF0;
+}
+
+/* Start Style side-bar */
+.side-bar i {
+    /* font-size: 2em; */
+    margin: 15px 0;
+    width: 35px;
+    height: 35px;
+}
+
+.side-bar a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.side-bar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.make-circle {
+    border-radius: 100%;
+    /* padding: 2px; */
+    border:2px solid
+}
+
+.tweet-button{
+    background-color: #1D9BF0;
+    color:white;
+    text-align: center;
+    border-radius: 40px;
+    padding: 5px 30%;
+    border:none;
+    display: block;
+    font-size: 2em;
+}
+
+/* End Style side-bar */
+
+/* Start Header Styling */
+
+.header img{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+}
+.header a{
+    text-decoration: none;
+    color: #1D9BF0;
+}
+/* End Header Styling */
