@@ -143,3 +143,10 @@ top:0.px;
     padding: 2% 5%;;
 }
 /*End style who-to-follow */
+
+
+@media(min-width:576px){
+    .position-sm-static{
+        position:static !important
+    }
+}
