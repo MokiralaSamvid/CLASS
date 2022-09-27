@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0;
+}
+
+.white-color{
+    color: white;
+}
+
+.bg-green-color{
+    background-color: #27BC9C;
+}
+/*--------------------------------- Start Styling header -------------------------*/
+
+header{
+    background-color: #2C3E50;
+    color:white;
+}
+/* Start styling button  */
+
+/* End styling button  */
+
+header ul li a:hover{
+    color: #27BC9C;
+}
+
+/*--------------------------------- End Styling header -------------------------*/
+
+/* -------------------------------- Style Main-Part ------------------ */
+main{
+    background-color: #27BC9C;
+    color: white;
+}
+.white-line{
+    border-bottom: 2px solid white;
+    width:30%;
+}
+.black-line{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width:30%;
+}
+main img{
+    
+    margin-top:25px;
+    /* height:230px; */
+    width: 40%;
+    border-radius: 50%;
+} main i{
+    font-size: 1.25em;
+}
+
+/* -------------------------------- End Main-Part ------------------ */
+/* ----------------------------Style portfolio part ---------------- */
+
+.portfolio figure{
+    border-radius: 5px;
+    padding:5%;
+    margin:2% auto;
+    width: fit-content;
+}
+.portfolio figure img{
+    width:170px;
+    height:150px;
+    border-radius: 50%;
+}
+.portfolio-fig-1{
+    background-color: #BA4C63;
+}
+.portfolio-fig-2{
+    background-color: #1FA4B6;
+}
+.portfolio-fig-3{
+    background-color: #130F0F;
+}
+.portfolio-fig-4{
+    background-color: #1C83C1;
+}
+.portfolio-fig-5{
+    background-color: #1137B5;
+}
+.portfolio-fig-6{
+    background-color: #CCB2A3;
+}
+
+.about{
+    background-color: #27BC9C;
+}
+
+form input,textarea{
+    width:90%;
+}
+form button{
+    border-radius: 10px;
+}
+
+/* ----------------------------Stop Style portfolio part ---------------- */
+@media (min-width:900px) {
+    /* .w-md-30{
+        width:30%;
+    } */
+    .portfolio{
+        width:860px;
+    }
+}
