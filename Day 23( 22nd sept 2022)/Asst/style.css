@@ -162,7 +162,7 @@ header p {
 
 /* --------------- Start Section products --------------*/
 .products {
-    margin: 3%;
+    margin: auto;
 }
 
 .products .info {
@@ -353,9 +353,9 @@ footer div {
         margin: 1% 2%;
     }
 
-    .products img {
-        height: 400px;
-    }
+    /* .products img {
+        height: 250px;
+    } */
 
     /* End products */
 
@@ -414,8 +414,8 @@ footer div {
         margin: auto;
     }
 
-    .maps iframe {
-        width: 60%;
+    .maps div {
+        width: 40%;
     }
 
     footer {
@@ -448,6 +448,23 @@ footer div {
     .four-items>* {
         width: 25%;
     }
+    .products{
+        width:1000px;
+        ;
+    }
+    .products img{
+        height:350px;
+    }
+    .product-figures{
+        margin:0 5%;
+        width:100%;
+        ;
+    }
+    .new-product{
+        width:1000px;
+        margin: auto;
+    }
+  
 
     /* End Styling the easy-way */
 }
@@ -520,8 +537,11 @@ footer div {
     }
 
     .our-products div article {
-        width: 70%;
+        width: 50%;
         font-size: 1.5em;
+    }
+    .new-product figure img {
+        margin-left:30%;
     }
 }
 
