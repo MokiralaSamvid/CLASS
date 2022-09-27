@@ -95,6 +95,32 @@ form input,textarea{
 form button{
     border-radius: 10px;
 }
+/*--------------------- Start Styling footer ---------------------*/
+.sec-footer footer{
+    background-color: #2C3E50;
+    color: white;
+    padding:2% 5%;
+    }
+    footer div{
+        margin:2%;
+    }
+    footer>div{
+        width:28%;
+    }
+    footer i{
+        padding:12px;
+        margin:1px 5px;
+        height:40px ;
+        width:40px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    footer+div{
+        background-color: black;
+        color: white;
+        padding:2% 5%;
+    }
+    /*----------------------- End Styling footer ---------------------*/
 
 /* ----------------------------Stop Style portfolio part ---------------- */
 @media (min-width:900px) {
