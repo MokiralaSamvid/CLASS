@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-2</title>
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+    <script>
+
+        //Array-1//
+        var arr = [1, 2, 3, 4];
+        console.log(arr);
+        console.log(arr[0]);
+
+        //Array-2 We can merge numeric and string data types.
+        var arr2 = [1, 2, 3, 4.5, "samvid"];
+        console.log(arr2);
+
+        //Array-3 we can also do like this 
+        var arr3 = [1, 2, 3, [2, 2, 2, "A"], "Hitech-city"]; // the output will look like  [1, 2, 3, Array(4), 'Hitech-city'] -> inside array not printed.
+        console.log(arr3);
+        console.log(arr3[3]);
+
+        var arr4 = new Array(10);
+        console.log(arr4);
+        console.log(arr4[0]);// Printing undefined values
+        arr4[0] = 1;
+        arr4[1] = 1;
+        arr4[2] = 2 * arr4[1] * arr4[0];
+        console.log(arr4[0]);
+        console.log(arr4[2]);
+
+        function func1(arr) {
+            document.write("Before Modified " + arr + "<br>");
+            arr[2] = 10;
+            document.write("After Modified and inside function" + arr + "<br>");
+        }
+
+        function myfun() {
+            arr = [1, 2, 3, 4, 5, 6];
+            document.write("When declared " + arr + "<br>");
+            func1(arr);
+            document.write("After Modified and outside function" + arr + "<br>");
+            //Hence Array is Dynamic
+            document.write("ARRAY IS DYNAMIC TYPE")
+        }
+
+
+        myfun();
+        //End arrays
+
+        // Start Objects //
+
+        // Start obj-1
+        var obj1 = {
+            first_name: "Mokirala", last_name: "Samvid", Roll_NO: "411"
+        }
+        console.log(obj1)
+        console.log(obj1.first_name)
+        //console.log(obj1[last_name]) --> Gives Error.
+        console.log(obj1["first_name"])
+        // Close obj-1
+
+        var obj2 = {
+            a1: [1, 2, 3, 4],
+            a2: [5, 6, 7, 8, 9],
+            a3: [9, 8, 7, 6],
+            a4: [5, 4, 3, 2, 1]
+        }
+        console.log(obj2)
+        console.log(obj2["a1"])
+        // End Objects //
+
+    </script>
+</body>
+
+</html>
