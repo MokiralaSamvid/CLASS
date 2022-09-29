@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptArrayMethods</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>JavaScriptArrayMethods</h1>
+    <div>
+
+    </div>
+
+    <script>
+
+        // To-String Method
+        var students = ["SAM", "SUD", "VASTH"];
+        document.write(students.toString() + "<br>");
+        // Join --> joins array with delimiter
+        document.write("<br>" + students.join(" <br> "))
+        document.write("<br>")
+
+        //push --> Adds elements at last of array.
+        students.push("Vaish");
+        document.write("<br>" + students.toString() + "<br>");
+
+        //pop --> Removes out last element from the array.
+        var popped_value = students.pop();
+        document.write("<br> The Popped Value is " + popped_value.toString() + "<br>");
+        document.write(students.toString() + "<br>");
+
+        //unshift --> Add item at start of array.
+        students.unshift("VAISH")
+        document.write("<br>" + students.toString() + "<br>");
+
+        //shift --> removes first item
+        students.shift();
+        document.write("<br>" + students.toString() + "<br>");
+
+        //Concatination --> creates new array
+        var friends = ["Prashanth", "Arun", "Rahul", "Dharam", "Pavan"];
+
+        var members = students.concat(friends);
+        document.write("<br> The students array is " + students.toString() + "<br>");
+        document.write("The Friends array is " + friends.toString() + "<br>");
+        document.write("The Members array is " + members.toString() + "<br><br>");
+
+        //Splice method --> effects the current array and doesnot create new array
+        //splice to add item at a particular place
+        members.splice(3, 0, "VAISH");
+        document.write("The Members array is " + members.toString() + "<br>");
+
+        members.splice(4, 0, "Prahas", "Srinivas", "Panchajanya");
+        document.write("The Members array is " + members.toString() + "<br>");
+        //splice to replace one with another
+        members.splice(8, 1, "ARUN");
+        document.write("The Members array is " + members.toString() + "<br>");
+
+        // splice method to delete an item at a specified place.//
+        members.splice(8, 1);
+        document.write("The Members array is " + members.toString() + "<br>");
+        // with -1
+        members.splice(-1,0);
+        document.write("<br>(with -1 remove noting) The Members array is " + members.toString() + "<br>");
+        members.splice(-1,1);
+        document.write("<br>(with -1 remove something) The Members array is " + members.toString() + "<br>");
+        //Remove every thing from 8th index
+        members.splice(8);
+        document.write("<br>(Remove everything from 8th index)The Members array is " + members.toString() + "<br>");
+
+
+        /*-----------------Remove every thing from prahas-------------------*/
+        // indexOf() method
+        document.write(" <br> The index of prahas in members array is " + members.indexOf("Prahas")+"<br>")
+        
+        document.write(" <br> The index of item when it is not there in members array is " + members.indexOf("prahas")+"<br>")
+        
+        // How splice works when search item not there
+        document.write("<br> **********"+members[-1]+"************** <br>");
+        
+        members.splice(members.indexOf("prahas"),0);
+        document.write("The Members array (before removed with -1) is " + members.toString() + "<br>");
+
+        members.splice(members.indexOf("prahas"));
+        document.write("The Members array (after removed with -1) is " + members.toString() + "<br>");
+        
+        //the slice function. --> It just creates new array by copying a part of array from an array.
+
+        document.write("---------------------- with slice operator---------------------- <br>" )
+        document.write("<br> with slice function at index-1 "+members.slice(1)+"<br>")
+        document.write("The Members array (after sliced with 1) is " + members.toString() + "<br>");
+        document.write("<br> with slice function "+members.slice(1,5))
+    
+    
+    
+    </script>
+</body>
+
+</html>
