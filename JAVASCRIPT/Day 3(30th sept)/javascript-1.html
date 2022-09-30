@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JAVASCRIPT Objects-1</h1>
+    <script>
+
+        //Object Declaration - 1 
+        document.write("The object declaration syntax-1: <br>")
+        var person = {
+            fname:"Samvid",
+            lname:"Sharma",
+            RollNo:0411,
+            Address:"HYD",
+            fullname:function(){return this.fname+this.lname}
+        }
+        document.write("The person object is:" +  person+"<br>")
+        document.write("The person object is:" +  person.fullname()+"<br>")
+        console.log("The person-1 is : "+person);
+        console.log(person);
+
+        document.write("<br>");
+
+        //Declaration-2 using new Object()
+
+        var person2 = new Object();
+        person2.fname="MOKIRALA";
+        person2.lname="SAMVID";
+        person2.RollNo=0411;
+        person2.Address="Secunderabad";
+        person2.fullname=function(){
+            return(this.fname+this.lname);
+        }
+        document.write("The person object is:" +  person2+"<br>");
+        document.write("The person object is:" +  person2.fullname()+"<br>");
+        console.log("The person-2 is : "+person2);
+        console.log(person2);
+        document.write("<br>");
+
+        // Declaration-3 using Object.create();
+        var person3 = Object.create(person2); // we can inherit the prototype of a required object using object.create().
+        person3.workLocation="USA";
+        document.write("The person object is:" +  person3+"<br>");
+        document.write("The person object is:" +  person3.fullname()+"<br>");
+        document.write("The person object is:" +  person3.workLocation+"<br>");
+        console.log("The person-3 is : "+ person3);
+        console.log(person3);
+
+
+    </script>
+</body>
+</html>
