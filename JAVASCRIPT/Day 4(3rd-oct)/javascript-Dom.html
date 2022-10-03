@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: bisque;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        }
+
+        .box{
+            background-color: violet;
+            width:300px;
+            text-align: center;
+            padding: 5px;
+            margin:5px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to our World!</h1>
+
+
+    <div class="box" id="box-1">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+    
+    <div class="box" id="box-2">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+
+    <div class="box" id="box-3">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+
+    <div class="box" id="box-4">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+    <div class="box" id="box-5">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+    
+    <div class="box" id="box-6">
+        <h1>Welcome to box  </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod adipisci quo accusantium saepe
+            eligendi ad omnis natus harum ipsa non veniam, aut iusto expedita inventore quis pariatur aperiam vero!</p>
+    </div>
+
+
+    <script>
+
+        // target an element by children array
+        var a = document.body.children[0];
+        console.log(a);
+        a.style.color="#f1f1f1";
+        a.style.backgroundColor="#565874";
+
+        var box = document.body.children[1];
+        console.log(box);
+
+        var box_heading = box.children[0];
+        console.log(box_heading);
+
+        box_heading.innerHTML = "Welcome to box-1"
+
+        // select elements using getElementsByTagName()
+        var boxes = document.getElementsByTagName("div");
+        console.log(boxes);
+        for(var i=1;i<boxes.length;i++){
+            boxes[i].children[0].innerHTML = "Welcome to box "+ (i+1) ;
+        }
+
+        // select element by using firstChild and firstElementChild
+        console.log(document.body.firstChild)
+        console.log(document.body.firstElementChild)
+        document.body.firstElementChild.style.backgroundColor="blue";
+
+        //select element using nextElementSibling
+        document.body.firstElementChild.nextElementSibling.style.color="cyan";
+        document.body.firstElementChild.nextElementSibling.nextElementSibling.style.color="#800000";
+
+        //select element by using getElementsByClassName().
+        var all_boxes = document.getElementsByClassName("box");
+        console.log(all_boxes)
+        for(i=0;i<all_boxes.length;i++){
+            all_boxes[i].style.fontFamily = 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva, Verdana, sans-serif";
+            all_boxes[i].style.border = "5px solid green"
+        }
+
+        //getElementById
+        document.getElementById("box-3").style.fontFamily="arial"
+
+        //getElement by css --  querySelector and querySelectorAll();
+
+        document.querySelector(".box ").style.color = "Yellow" // querySelector only selects 1st matched element
+
+       var each_box = document.querySelectorAll(".box");
+       console.log(each_box)
+       for(var i=3;i<each_box.length;i++){
+        each_box[i].style.backgroundColor="rgb(25,55,85)";
+        each_box[i].style.color="rgb(180,180,180)";
+       }
+      
+    </script>
+</body>
+
+</html>

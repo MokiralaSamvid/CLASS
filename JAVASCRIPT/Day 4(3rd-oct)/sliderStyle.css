@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin:0
+}
+.slide{
+    background-color: cornflowerblue;
+    width:100%;
+    margin: auto;
+    padding: 1% 0;
+    display:none;
+}
+.slide:nth-child(1){
+    display: block;
+}
+.slide img{
+    width:100%;}
+
+.previous-button{
+position: absolute;
+top:35%;
+width:fit-content;
+left:1%;
+}
+.next-button{
+position: absolute;
+top:35%;
+width:fit-content;
+right:5%;
+}
+
