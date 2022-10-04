@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div{
+        background-color: violet;
+        color:#dedede ;
+    }
+</style>
+<body>
+    
+    <div class="part-1">
+        <h1>I am heading</h1>
+        <p>Click on image to disappear it</p>
+        <img src="/Day 1,2,3/images/img2.jpg" alt="">
+        <p>click on button re add image</p>
+        <button>click me to re add img</button>
+        <button> click me to add and remove</button>
+    </div>
+
+    <button>
+        click me to disappear div
+    </button>
+
+
+    <script>
+
+        var img = document.querySelector(".part-1 img")
+        console.log(img)
+        var event = img.addEventListener('click',image_disappear);
+        console.log(event)
+
+        var appear_img_button = document.querySelector(".part-1 button")
+        appear_img_button.addEventListener('click',appearimg)
+
+        var bothop = document.querySelector(".part-1 button+button")
+        bothop.addEventListener('click',app_disapp)
+
+        function image_disappear(){
+            if(img.style.display !="none"){
+                img.style.display = "none";
+            }
+        }
+
+        function appearimg(){
+            img.style.display = "block"
+        }
+
+        function app_disapp(){
+            if(img.style.display !="none"){
+                img.style.display = "none";
+            }
+            else{
+                img.style.display = "initial"
+            }
+        }
+
+        // using event.target
+        var div_btn = document.querySelector("div+button")
+        var div_item = document.querySelector(".part-1")
+
+        div_btn.addEventListener('click', operation)
+
+        function operation(evnt){
+            evnt.target.style.backgroundColor="yellow";
+            if(div_item.style.display == "none")
+            div_item.style.display = "block";
+            else
+            div_item.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
