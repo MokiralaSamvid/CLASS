@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <link rel="stylesheet" href="./sliderStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -29,49 +33,62 @@
         <div class="slide">
             <p class="text-center"> <strong>Slide-3</strong></p>
             <img src="./images/img-3.jpg" alt="">
-            <figcaption class="text">IMAGE-3</figcaption>
+            <figcaption class="text-center">IMAGE-3</figcaption>
         </div>
         <div class="slide">
             <p class="text-center"><strong>Slide-4</strong></p>
-            <img src="./images/img-3.jpg" alt="">
-            <figcaption class="text">IMAGE-4</figcaption>
+            <img src="./images/img-4.jpg" alt="">
+            <figcaption class="text-center">IMAGE-4</figcaption>
         </div>
 
-        <button class="next-button border-0 " onclick="next_slide(1)">Next</button>
-        <button class="previous-button border-0 " onclick="previous_slide()">Previous</button>
+        <button class="next-button border-0  " onclick="next_slide()"><i class="fa-solid fa-caret-right"></i></button>
+        <button class="previous-button border-0 " onclick="previous_slide()"><i class="fa-solid fa-caret-left"></i></button>
 
     </section>
 
     <script>
-        
-            var allslides = document.getElementsByClassName("slide");
-            console.log(allslides)
-            slides = Array.from(allslides)
+
+        // Store All slides in an arry
+        var allslides = document.getElementsByClassName("slide");
+        console.log(allslides)
+        console.log(allslides[0])
+
+        var l = allslides.length // no of slides 
+
+        /*---------  let display only 1st slide hide other slides --------*/
+
+        let index_of_currentslide = 0;
+        displaySlides(index_of_currentslide);
+
+        function displaySlides(index_of_currentslide) {
+            allslides[index_of_currentslide].style.display = "block"
+
+            for (let i = 0; i < l; i++) {
+                if (i == index_of_currentslide) {
+                    continue;
+                }
+                allslides[i].style.display = "none"
+            }
+        }
+
+        function next_slide() {
             
-
-        function next_slide(nxtslide) {
-           
-            var current_slide = document.querySelector(".slide img");
-            console.log(current_slide)
-            var index_of_currentslide = slides.indexOf(current_slide)
-            console.log(index_of_currentslide);
-
+            if (index_of_currentslide+1 >= l) {
+                index_of_currentslide = -1;
+                // return   // remove return and add above line to rotate
+            }
             index_of_currentslide++;
-            if (index_of_currentslide >= allslides.length) {
-                // return 0;
-                allslides[0].style.display = "block";
-                for (var i = 1; i < allslides.length; i++) {
-                    allslides[i].style.display = "none";
-                }
+            displaySlides(index_of_currentslide);
+        }
+
+        function previous_slide() {
+            
+            if (index_of_currentslide-1 < 0) {
+                index_of_currentslide = l ;
+                // return  // remove return and add above line to rotate
             }
-            else {
-                allslides[index_of_currentslide].style.display = "block";
-                for (var i = 0; i < allslides.length; i++) {
-                    if (i == index_of_currentslide)
-                        continue;
-                    allslides[i].style.display = "none";
-                }
-            }
+            index_of_currentslide--;
+            displaySlides(index_of_currentslide)
         }
     </script>
 </body>

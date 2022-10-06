@@ -12,22 +12,42 @@ body{
     padding: 1% 0;
     display:none;
 }
-.slide:nth-child(1){
-    display: block;
-}
+
 .slide img{
     width:100%;}
 
 .previous-button{
 position: absolute;
 top:35%;
-width:fit-content;
+width:30px;
+height:30px;
 left:1%;
+border-radius: 100%;
 }
 .next-button{
 position: absolute;
 top:35%;
-width:fit-content;
+width:30px;height:30px;
 right:5%;
+border-radius: 100%;
 }
+
+@media(min-width:576px){
+    .previous-button,.next-button{
+        top:45%
+    }
+}
+
+@media(min-width:768px){
+.previous-button,.next-button{
+    top:25%
+}
+}
+@media(min-width:990px){
+.previous-button,.next-button{
+    top:45%
+}
+}
+
+
 

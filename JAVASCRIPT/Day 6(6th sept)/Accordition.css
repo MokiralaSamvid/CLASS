@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FFFFFF ;
+}
+
+article{
+    background-color:#E7E9EB ;
+}
+article>p{
+    background-color: white;
+}
+
+article div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+article div>p{
+    width:10%;
+    text-align: center;
+}
+article i{
+    font-size: 1.25em;
+    border-radius: 100%;
+    background-color: rgb(190, 168, 168);
+    padding: 2%;
+}
+.para{
+    display: none;
+}
