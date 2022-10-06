@@ -9,8 +9,8 @@ function addElementItem(event) {
     var previous_item_names = document.querySelectorAll(".list-item > p")
     console.log(previous_item_names)
 
-    
-   
+
+
 
     var item = document.createElement("div")
     item.className = "list-item";
@@ -25,8 +25,15 @@ function addElementItem(event) {
     close_button.className = "close-button"
     close_button.appendChild(document.createTextNode("\u00D7"));
 
-    if(para_value.innerHTML==""){
-        alert("Enter item to add !!")
+    if (para_value.innerHTML == "") {
+        document.getElementById("alert").innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>Enter an item to add !!';
+        document.getElementById("alert").style.color = "red";
+
+        setTimeout(() => {
+            document.getElementById("alert").innerHTML = "Add an element to list"
+            document.getElementById("alert").style.color = "unset";
+        }, 2000)
+        // alert("Enter item to add !!")
         return
     }
 
@@ -34,11 +41,19 @@ function addElementItem(event) {
         console.log(previous_item_names[i].textContent)
         console.log((para_value.innerHTML))
 
-        console.log(previous_item_names[i].textContent == para_value.innerHTML )
-        if(previous_item_names[i].textContent == para_value.innerHTML){
-            alert("Item Already Exists !!")
+        console.log(previous_item_names[i].textContent == para_value.innerHTML)
+        if (previous_item_names[i].textContent == para_value.innerHTML) {
+            document.getElementById("alert").innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>Item already exist !!';
+            document.getElementById("alert").style.color = "#dd0000";
+
+            setTimeout(() => {
+                document.getElementById("alert").innerHTML = " Add an element to list"
+                document.getElementById("alert").style.color = "unset";
+            }, 2000)
+
+            //alert("Item Already Exists !!")
             return;
-            
+
         }
     }
 
@@ -57,8 +72,8 @@ function addElementItem(event) {
     }
 }
 
-function alreadyExists(){
-console.log(previous_item_names)
+function alreadyExists() {
+    console.log(previous_item_names)
 
 }
 
