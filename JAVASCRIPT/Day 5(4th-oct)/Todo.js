@@ -67,6 +67,7 @@ function addElementItem(event) {
         close_items[i].onclick = function () {
             var parent = this.parentElement;
             parent.style.display = "none";
+           
             parent.remove();
         }
     }

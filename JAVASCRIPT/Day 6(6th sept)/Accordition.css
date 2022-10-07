@@ -8,6 +8,8 @@ body{
 
 article{
     background-color:#1464b4 ;
+    padding: 1% 2%;;
+    margin:2px;
 }
 article>p{
     background-color: rgb(29, 53, 29);
