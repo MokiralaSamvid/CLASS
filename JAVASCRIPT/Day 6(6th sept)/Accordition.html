@@ -57,26 +57,37 @@
             console.log(div_button)
             var div_button2 = document.getElementsByClassName("article")
             console.log(div_button2)
-
+            let j = -1;
             let old_para = document.createElement("p")
             for (let i = 0; i < div_button.length; i++) {
-
+               
                 div_button[i].addEventListener('click', () => {
-                    old_para.style.display="none" 
+
+
+
                     console.log(div_button[i].nextElementSibling)
-                    let para=div_button[i].nextElementSibling 
+                    let para = div_button[i].nextElementSibling
                     // 
 
-                    if (div_button[i].nextElementSibling.style.display =="none") {
+                    if (div_button[i].nextElementSibling.style.display == "none") {
+                        
+                        // old_para.style.display="none"
+                        if (j > -1 && j!=i) {
+                            div_button[j].nextElementSibling.style.display = "none";
+                            div_button[j].children[1].innerHTML = '<i class="fa-solid fa-plus"></i>'
+                        }
                         div_button[i].nextElementSibling.style.display = "block";
-                        // old_para.style.display="none"     
+                        // console.log(div_button[i].children[1])
+                        div_button[i].children[1].innerHTML = '<i class="fa-solid fa-minus"></i>'
+                        j = i;
                     }
-                    else{
-                        div_button[i].nextElementSibling.style.display ="none"
+                    else {
+                        div_button[i].nextElementSibling.style.display = "none";
+                        div_button[i].children[1].innerHTML = '<i class="fa-solid fa-plus"></i>'
                     }
-                   
-                } )
-                
+
+                })
+
             }
         </script>
 

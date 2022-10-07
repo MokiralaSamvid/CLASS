@@ -3,14 +3,15 @@
 }
 
 body{
-    background-color:#FFFFFF ;
+    background-color:#632828 ;
 }
 
 article{
-    background-color:#E7E9EB ;
+    background-color:#1464b4 ;
 }
 article>p{
-    background-color: white;
+    background-color: rgb(29, 53, 29);
+    color: rgb(184, 175, 175);
 }
 
 article div{
