@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./side-bars.css">
+
+</head>
+
+<body>
+    <section class="container-fluid">
+        <header class="row g-0">
+            <div class="d-sm-flex align-items-center ">
+                <p class="col-sm-4"><strong>Gunaattetha</strong></p>
+                <ul class="col-sm-8 d-sm-flex list-unstyled align-items-center justify-content-around ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Page-1</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <aside>
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <ul class="list-unstyled">
+                <li><a href="#">Para-1</a></li>
+                <li><a href="#">Para-2</a></li>
+                <li><a href="#">Para-3</a></li>
+                <li><a href="#">Para-4</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div>
+                <h1>Box-1</h1>
+                <h2>Gunaattetha</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque explicabo similique, voluptas
+                    est
+                    rerum ipsam amet dicta quo sit adipisci officia necessitatibus, delectus quis voluptatibus facilis,
+                    pariatur cum accusamus!</p>
+            </div>
+            <div>
+                <h1>Box-2</h1>
+                <h2>Gunaattetha</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque explicabo similique, voluptas
+                    est
+                    rerum ipsam amet dicta quo sit adipisci officia necessitatibus, delectus quis voluptatibus facilis,
+                    pariatur cum accusamus!</p>
+            </div>
+            <div>
+                <h1>Box-3</h1>
+                <h2>Gunaattetha</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae itaque explicabo similique, voluptas
+                    est
+                    rerum ipsam amet dicta quo sit adipisci officia necessitatibus, delectus quis voluptatibus facilis,
+                    pariatur cum accusamus!</p>
+            </div>
+        </main>
+
+        <section class="content">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt nemo fugiat iusto obcaecati
+                commodi provident minima sit officiis? Amet corrupti laudantium harum voluptatum numquam a veritatis?
+                Perferendis similique nemo deserunt assumenda voluptatum quam porro eum itaque, saepe excepturi
+                distinctio odio iste aperiam architecto ullam corporis explicabo, dolor doloribus praesentium vero
+                obcaecati numquam atque repudiandae? Ut distinctio dolor, earum dolore laborum quaerat modi beatae
+                placeat at cum aperiam, ab sunt quos! Officia cupiditate dolor saepe. Magni quaerat veritatis porro
+                quasi!</p>
+        </section>
+    </section>
+
+    <script>
+
+        var aside = document.querySelector("aside ul")
+
+        var aside_button = document.querySelector("button")
+
+        aside_button.addEventListener("click",(event)=>{
+      
+            aside = document.querySelector("aside ul")
+            if(aside.style.display == "none"){
+                aside.style.display = "block";
+                aside.style.width="initial"
+                aside.style.height="initial";
+                aside.parentElement.style.height="300px";
+                aside.parentElement.style.width="150px";
+                event.stopPropagation();
+                event.target.innerHTML = '<i class="fa-solid fa-chevron-left"></i>'
+            }
+            else if(aside.style.display != "none"){
+                event.stopPropagation();
+                aside.style.display = "none";
+                aside.style.width="0";
+                aside.style.height="0";
+                aside.parentElement.style.height="fit-content";
+                aside.parentElement.style.width="fit-content";
+                console.log(event.target.innerHTML);
+                event.target.innerHTML = '<i class="fa-solid fa-chevron-right"></i>'
+            }
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

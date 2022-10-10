@@ -1,0 +1,40 @@
+
+
+
+.row>div{
+    margin-bottom: 0;
+}
+#menu{
+    text-align: center;
+   
+}
+#menu:hover{
+    cursor: pointer;
+}
+#nav {
+    display: none;
+    background-color: grey;
+    padding: 5px 10px;
+    padding-bottom: 0;
+    text-align: center;
+     margin:0;
+    ;
+}
+#nav li{
+    padding: 5px 30px;
+}
+#nav li a{
+    color: black;
+}
+/* #nav li:hover {
+    background-color: white;
+} */
+.tabs>div{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+    border: 2px solid  rgb(100, 100, 1);
+    border-top: 0;
+    text-align: center;
+    /* display: none; */
+    margin-top: 0%;
+}
