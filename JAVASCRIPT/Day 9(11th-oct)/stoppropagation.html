@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #outer{
+            height:400px;
+            width:500px;
+            background-color: indianred;
+        }
+
+        #inner{
+            height:200px;
+            width:200px;
+            background-color: rgb(92, 205, 120);
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript StopPropagation</h1>
+
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+
+    <script>
+        let outer_div = document.getElementById("outer")
+        let inner_div = document.getElementById("inner")
+
+        outer_div.addEventListener("click",()=>{
+            console.log("Outer div clicked")
+        })
+
+        inner_div.addEventListener("click",(event)=>{
+            event.stopPropagation()
+            console.log("Inner div clicked")
+            outer_div.style.display = "none"
+        })
+    </script>
+</body>
+</html>

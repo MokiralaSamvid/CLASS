@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleModal.css">
+</head>
+
+<body>
+
+    <header>
+        <p><strong>Hello World !!</strong> Welcome to notes.</p>
+    </header>
+
+    <section>
+
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <p> I am Model header</p> <span>&cross;</span>
+                </div>
+                <p class="modal-content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi
+                    necessitatibus
+                    facilis quibusdam reprehenderit ut perferendis explicabo. Voluptas, repellendus pariatur hic, earum
+                    natus itaque deleniti, laudantium corrupti eveniet animi illo.</p>
+                <div class="modal-foot">I am Model Footer</div>
+            </div>
+        </div>
+
+        <button>Open Model</button>
+
+        <article class="box">
+            <h2>Box-1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?</p>
+        </article>
+
+        <article class="box">
+            <h2>Box-2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?</p>
+        </article>
+
+        <article class="box">
+            <h2>Box-3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?</p>
+        </article>
+        <article class="box">
+            <h2>Box-4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?</p>
+        </article>
+        <article class="box">
+            <h2>Box-5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?</p>
+        </article>
+
+
+    </section>
+
+
+    <script>
+        var button = document.querySelector("button")
+        let close_button = document.querySelector("span")
+
+        var all_boxes = document.getElementsByClassName("box")
+
+        let modal
+
+        button.addEventListener("click", showModal)
+
+        // close_button.addEventListener("click",()=>{
+        //     modal = document.querySelector(".modal")
+        //     console.log(modal)
+        //     modal.style.display ="none"
+        //     console.log(button)
+        //     button.style.display = "initial"
+        // })
+        let modal_para 
+        for (let i = 0; i < all_boxes.length; i++) {
+            all_boxes[i].addEventListener("click", () => {
+                modal_para = document.querySelector(".modal-content>p")
+                console.log(modal_para)
+                modal_para.innerHTML = `Box ${i + 1} is pressed.`
+                showModal()
+            })
+        }
+
+        function showModal(event) {
+
+            modal = document.querySelector(".modal")
+            if (modal.style.display == "none") {
+                modal.style.display = "block"
+                // event.target.innerHTML="Close Model"
+                console.log(event)
+
+                if (event != undefined) {
+                     modal_para = document.querySelector(".modal-content>p")
+                    modal_para.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit mollitia error reprehenderit
+                assumenda quis iure repellendus laudantium dolor, officia cum delectus nihil distinctio odit id
+                quisquam. Assumenda, explicabo aliquid?`
+                }
+                button.style.display = "none";
+            }
+            else if (modal.style.display != "none") {
+
+                modal.style.display = "none";
+
+                close_button.addEventListener("click", () => {
+                    console.log(modal)
+                    modal.style.display = "none";
+
+                    console.log(button)
+                    button.style.display = "initial"
+                })
+            }
+        }
+
+    </script>
+</body>
+
+</html>
