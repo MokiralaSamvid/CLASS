@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Apply blue color */
+.color-blue {
+    color: #1D9BF0;
+}
+
+/* Start Style side-bar */
+.side-bar ul{
+  position: sticky;
+  top:0px;
+}
+.side-bar i {
+    /* font-size: 2em; */
+    margin: 15px 0;
+    width: 35px;
+    height: 35px;
+    font-size: 1.25em;
+}
+
+.side-bar a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.side-bar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: relative;
+    top: 100px;
+}
+.side-bar img+p{
+    position: relative;
+    top: 100px;
+}
+
+.make-circle {
+    border-radius: 100%;
+    /* padding: 2px; */
+    border:2px solid
+}
+
+.tweet-button{
+    background-color: #1D9BF0;
+    color:white;
+    text-align: center;
+    border-radius: 40px;
+    padding: 5px 30%;
+    border:none;
+    display: block;
+    font-size: 1.5em;
+}
+
+/* End Style side-bar */
+
+/* Start Header Styling */
+
+.header img{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+}
+.header a{
+    text-decoration: none;
+    color: #1D9BF0;
+}
+.tweet-button2{
+    font-size: 1.2em;
+    background-color: #96CDF8;
+    padding:0 25px;
+}
+/* End Header Styling */
+
+/* Start Styling Articles */
+.articles img{
+    width:90px;
+    height:80px;
+
+}
+/* End Styling Articles */
+
+/* Start styling Right-aside */
+.search-bar input[type=search]{
+border:none;
+background-color: #EFF3F4;
+}
+
+
+.right-aside .search-bar{
+background-color: #EFF3F4;
+box-shadow: 0.5px 0.5px ;
+border-radius: 50px;
+margin:0 1%;
+padding:3%;
+position: sticky;
+top:0.px;
+;
+}
+
+.aside-articles,.who-to-follow{
+    background-color: #EFF3F4;
+    margin-top:5%;
+    border-radius: 25px;
+    padding:2%;
+    color: black;
+}
+.aside-articles article{
+    padding: 2% 5px;
+    margin:5% 0;
+    border-radius: 10px;
+}
+.aside-articles a{
+    text-decoration: none;
+}
+.aside-articles img{
+    width:60px;
+    height:60px;
+    float: right;
+}
+.aside-articles article:hover{
+    background-color: rgba(212, 208, 208, 0.527);
+    cursor: pointer;
+
+}
+/* End styling Right-aside */
+
+/*Start style who-to-follow */
+/* --------- see up near .aside-articles (line-104 currently) */
+.who-to-follow img{
+    width:50px;
+    height:50px;
+}
+.follow-button{
+    border:none;
+    background-color: black;
+    margin:2%;
+    color:#EFF3F4;
+    border-radius: 10px;
+    padding: 2% 5%;;
+}
+/*End style who-to-follow */
+
+
+@media(min-width:576px){
+    .position-sm-static{
+        position:static !important
+    }
+}
