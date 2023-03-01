@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(24, 63, 1, 0.541);
+}
+header{
+    background-color: gray;
+}
+
+header ul,p{
+    margin:0;
+}
+
+header li{
+    padding:20px 30px;
+}
+header li a,aside a{
+    text-decoration: none;
+    color: inherit;
+}
+header li a:hover,aside a:hover{
+    color:inherit
+}
+header ul li:hover{
+    background-color: rgb(201, 200, 200);
+    
+}
+
+aside{
+    background-color: rgb(194, 119, 27);
+    width:150px;
+    height:300px;
+    float:left;
+    /* display: none; */
+    text-align: center;
+    margin: 0;padding: 0;
+}
+aside ul li{
+    padding:10px;
+}
+aside li:hover{
+    background-color: rgba(194, 27, 27, 0.5);
+}
+aside button{
+    border: 0;
+    margin:5px auto;
+    background-color: blue;
+    color: white;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+}
+main div{
+    width:30%;
+    margin:5px;
+    padding: 2px;
+    background-color: rgba(236, 90, 217, 0.521);
+}
+
+section.content{
+    background-color: rgb(21, 180, 180);
+    clear: both;
+    padding: 10px;
+}

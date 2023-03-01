@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArraySorting</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>JavaScriptArrayMethods-3</h1>
+
+    <script>
+        //sort() function
+        var names = ["Sam","Hema","Tirumal","Dharam","Prahas"];
+        document.write("Before sorting names array : "+names+"<br>")
+        names.sort();
+        document.write("After sorting names array : "+names+"<br>")//Alphabetical order
+
+        var values=[50,100,125,2000,10,20,30,]
+        document.write("Before sorting names array : "+values+"<br>")
+        values.sort();
+        document.write("After sorting names array : "+values+"<br>")// Due to alphabetic comparision  it's showing 100<20.
+        
+
+        values.sort(function(a,b){
+            return a-b;
+        }
+        )
+        document.write("After sorting names array  with compare function : "+values+"<br>")
+
+        // min value and max value
+
+        var min_in_values = values[0] //After sorting
+        var max_in_values = values[values.length-1] //After sorting
+        document.write("The minimum value of the array values is : "+ min_in_values+"<br>")
+        document.write("The maximum value of the array values is : "+ max_in_values+"<br>")
+    </script>
+
+</body>
+</html>

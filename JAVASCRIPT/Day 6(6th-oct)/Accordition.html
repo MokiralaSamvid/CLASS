@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Accordition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <section>
+
+        <article class="article">
+            <div>
+                <h1>Article-1</h1>
+                <p><i class="fa-solid fa-plus"></i></p>
+            </div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum mollitia veniam
+                voluptates ducimus
+                sapiente, nobis, perferendis repellat iure modi explicabo vitae nemo eius ea quia aspernatur in ad amet.
+            </p>
+        </article>
+
+        <article class="article">
+            <div>
+                <h1>Article-2</h1>
+                <p><i class="fa-solid fa-plus"></i></p>
+            </div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum mollitia veniam
+                voluptates ducimus
+                sapiente, nobis, perferendis repellat iure modi explicabo vitae nemo eius ea quia aspernatur in ad amet.
+            </p>
+        </article>
+
+        <article class="article">
+            <div>
+                <h1>Article-3</h1>
+                <p><i class="fa-solid fa-plus"></i></p>
+            </div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum mollitia veniam
+                voluptates ducimus
+                sapiente, nobis, perferendis repellat iure modi explicabo vitae nemo eius ea quia aspernatur in ad amet.
+            </p>
+        </article>
+
+
+        <script>
+
+            var div_button = document.querySelectorAll("article div")
+            console.log(div_button)
+            var div_button2 = document.getElementsByClassName("article")
+            console.log(div_button2)
+            let j = -1;
+        
+            for (let i = 0; i < div_button.length; i++) {
+               
+                div_button[i].addEventListener('click', () => {
+
+
+
+                    console.log(div_button[i].nextElementSibling)
+                    let para = div_button[i].nextElementSibling
+                    // 
+
+                    if (div_button[i].nextElementSibling.style.display == "none") {
+                        
+                        // old_para.style.display="none"
+                        if (j > -1 && j!=i) {
+                            div_button[j].nextElementSibling.style.display = "none";
+                            div_button[j].children[1].innerHTML = '<i class="fa-solid fa-plus"></i>'
+                        }
+                        div_button[i].nextElementSibling.style.display = "block";
+                        // console.log(div_button[i].children[1])
+                        div_button[i].children[1].innerHTML = '<i class="fa-solid fa-minus"></i>'
+                        j = i;
+                    }
+                    else {
+                        div_button[i].nextElementSibling.style.display = "none";
+                        div_button[i].children[1].innerHTML = '<i class="fa-solid fa-plus"></i>'
+                    }
+
+                })
+
+            }
+        </script>
+
+    </section>
+
+</body>
+
+</html>

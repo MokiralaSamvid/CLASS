@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript obj 2</title>
+</head>
+<body>
+    <h1>JavaScript Objects - 2</h1>
+
+    <script>
+        // Object Constructors and prototypes
+
+        function Person(fname,lname,RollNo){ // This is called as constructor function.
+            this.firstName = fname;
+            this.lasttName = lname;
+            this.rollNo = RollNo;
+        }
+
+        var p1 = new Person("Mokirala","Samvid",411); //looks same like object creation in javascript.
+
+        console.log(p1);
+        var p2 = new Person("Mokirala","SUdhamshu",401);
+        console.log(p2);
+        var p3 = new Person("Mokirala","Sharma",400);
+        console.log(p3);
+
+        p1.fullname = function(){
+            return(this.firstName + this.lasttName)
+        }
+        console.log(p1.fullname)
+        console.log(p1.fullname())
+
+        // we added simply for p1 but we cant do this much easily for a constructor function
+        // We should use prototype function for a constructor function to add a property to it.
+
+        Person.prototype.fullname = function(){
+            return(this.firstName + this.lasttName);
+        }
+
+        console.log(p1);console.log(p1.fullname());
+        console.log(p1);console.log(p2.fullname());
+        console.log(p1);console.log(p3.fullname());
+
+    </script>
+</body>
+</html>

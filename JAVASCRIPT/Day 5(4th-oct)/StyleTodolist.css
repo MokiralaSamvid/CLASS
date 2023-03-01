@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6394EF;
+}
+
+
+
+section{
+    margin:5%;
+    color: white;
+    background-color:#000063 ;
+    padding: 5%;
+}
+ul{
+    padding: 0;
+}
+.list-item{
+    background-color: rgb(46, 31, 46);
+    padding:0 3%;
+    width: 30%;
+    margin:1% 0
+}
+.list-item p{
+    width:80%;
+}
+.close-button{
+    background-color: red;
+    color:white;
+    border:1px solid red;
+    display: inline-block;
+    width:20%;
+    padding: auto;
+    font-size: 1.25em;
+    text-align: center;
+}
+.close-button:hover{
+    cursor: pointer;
+}

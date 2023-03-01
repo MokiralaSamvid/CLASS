@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#632828 ;
+}
+
+article{
+    background-color:#1464b4 ;
+    padding: 1% 2%;;
+    margin:2px;
+}
+article>p{
+    background-color: rgb(29, 53, 29);
+    color: rgb(184, 175, 175);
+}
+
+article div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+article div>p{
+    width:10%;
+    text-align: center;
+}
+article i{
+    font-size: 1.25em;
+    border-radius: 100%;
+    background-color: rgb(190, 168, 168);
+    padding: 2%;
+}
+.para{
+    display: none;
+}

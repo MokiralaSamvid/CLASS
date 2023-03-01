@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document-1</title>
 </head>
 
 <body>
@@ -32,10 +32,38 @@
         //Start strings //
         var name="samvid";
         console.log(name);
+        console.log(name[2]);
         console.log(typeof name);
+
+        //Javascript String is immutable,
+        name[2]='n';
+        console.log(name);
+        
         //End strings //
 
-        //Start With 
+        //Merge numeric and string
+        var a=10;
+        var b="Hai";
+        console.log(a+b);
+        console.log(16 + 4 + "Hai");
+        console.log("HAI"+16 + 4 );
+        
+
+        //Start With boolean //
+        var x=true;
+        console.log(x);
+        console.log(typeof(x)); //we can also use typeof() //
+
+        var y=false;
+        console.log(y);
+        console.log(typeof(y)); 
+        //End With boolean //
+
+        //null the object type//
+        var z=null;
+        console.log(z);
+        console.log(typeof(z)); 
+
 
 
     </script>

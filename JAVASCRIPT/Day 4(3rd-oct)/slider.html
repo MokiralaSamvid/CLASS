@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./sliderStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section class="slider row g-0">
+
+        <div class="slide">
+            <p class="text-center"><strong>Slide-1</strong></p>
+            <img src="./images/img-1.jpg" alt="">
+            <figcaption class="text-center">IMAGE-1</figcaption>
+        </div>
+
+        <div class="slide">
+            <p class="text-center"><strong>Slide-2</strong></p>
+            <img src="./images/img-2.jpg" alt="">
+            <figcaption class="text-center">IMAGE-2</figcaption>
+        </div>
+
+        <div class="slide">
+            <p class="text-center"> <strong>Slide-3</strong></p>
+            <img src="./images/img-3.jpg" alt="">
+            <figcaption class="text-center">IMAGE-3</figcaption>
+        </div>
+        <div class="slide">
+            <p class="text-center"><strong>Slide-4</strong></p>
+            <img src="./images/img-4.jpg" alt="">
+            <figcaption class="text-center">IMAGE-4</figcaption>
+        </div>
+
+        <button class="next-button border-0  " onclick="next_slide()"><i class="fa-solid fa-caret-right"></i></button>
+        <button class="previous-button border-0 " onclick="previous_slide()"><i class="fa-solid fa-caret-left"></i></button>
+
+    </section>
+
+    <script>
+
+        // Store All slides in an arry
+        var allslides = document.getElementsByClassName("slide");
+        console.log(allslides)
+        console.log(allslides[0])
+
+        var l = allslides.length // no of slides 
+
+        /*---------  let display only 1st slide hide other slides --------*/
+
+        let index_of_currentslide = 0;
+        displaySlides(index_of_currentslide);
+
+        function displaySlides(index_of_currentslide) {
+            allslides[index_of_currentslide].style.display = "block"
+
+            for (let i = 0; i < l; i++) {
+                if (i == index_of_currentslide) {
+                    continue;
+                }
+                allslides[i].style.display = "none"
+            }
+        }
+
+        function next_slide() {
+            
+            if (index_of_currentslide+1 >= l) {
+                index_of_currentslide = -1;
+                // return   // remove return and add above line to rotate
+            }
+            index_of_currentslide++;
+            displaySlides(index_of_currentslide);
+        }
+
+        function previous_slide() {
+            
+            if (index_of_currentslide-1 < 0) {
+                index_of_currentslide = l ;
+                // return  // remove return and add above line to rotate
+            }
+            index_of_currentslide--;
+            displaySlides(index_of_currentslide)
+        }
+    </script>
+</body>
+
+</html>

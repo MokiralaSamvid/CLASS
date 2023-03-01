@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-5</title>
+</head>
+<body>
+    <h1>JAVASCRIPT LOOPS</h1>
+    <script>
+        function pattern1(n){
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=i;j++){
+                    document.write(" * ");
+                }
+                document.writeln("<br>");
+            }
+            document.write("==========<br><br>")
+        }
+
+        function pattern2(n){
+            for(var i=1;i<=n;i++){
+                for(var j=n;j>=i;j--){
+                    console.log(" * ");
+                    document.write(" * ");
+                }
+                console.log("<br>");
+                document.writeln("<br>");
+            }
+            document.write("==========<br><br>")
+        }
+
+        pattern1(5);
+        pattern1(10);
+
+        pattern2(5);
+        pattern2(10);
+
+        var fact = function(n){
+            var i=1,factorial=1;
+            while(i<=n){
+                factorial*=i;
+                i++;
+            }
+            document.write("The Factorial of given value "+ n + " is "+ factorial+"<br>")
+            console.log("The Factorial of given value "+ n + " is "+ factorial)
+        }
+
+        var fact2 = function(n){
+            if(n==1 || n==2){
+                return n;
+            }
+            else{
+                return (n*fact2(n-1));
+            }
+        }
+
+        function fact_dynamic(n){
+            document.write("<br>Using Dynamic Programming")
+            var arr=new Array(n+1);
+            arr[0]=1;
+            arr[1]=1;
+            for(i=2;i<=n+1;i++){
+                arr[i]=0;
+            }
+            // document.write(arr+"<br>");
+            return fact_dynamic_start(n,arr);
+        }
+        function fact_dynamic_start(n,arr){
+            // document.write(arr+"<br>");
+            if(n==1 || n==2){
+                return n;
+            }
+            else if(arr[n]!=0){
+                // document.write(arr[n]+"<br>")
+                return arr[n];
+            }
+            else{
+                arr[n] = (n*fact_dynamic_start(n-1,arr));
+                // document.write(arr[n]+"<br>");
+                return  arr[n];
+            }
+        }
+        fact(5);
+        fact(4)
+        fact(10);
+        document.write("The Factorial of given value is ")
+        document.write(fact2(5)+"<br>")
+
+        var y = fact_dynamic(5);
+        document.write("<br> The Factorial of given value is ")
+        document.write( y +"<br>")
+
+       
+
+
+
+    </script>
+
+</body>
+</html>

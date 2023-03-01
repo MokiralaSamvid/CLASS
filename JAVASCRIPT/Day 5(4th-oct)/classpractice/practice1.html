@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box-1{
+            background-color: violet;
+            /* height:200px; */
+            width:30%;
+        }
+        ul{
+            background-color: blanchedalmond;
+            padding: 2px;
+            margin:25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box-1">
+
+    </div>
+    
+
+    <script>
+
+        // createElement(), createTextNode(), appendChild(), append(), 
+        var para = document.createElement("p");
+        para.innerText = "Hello Box-1 \n"
+        document.getElementById("box-1").appendChild(para);
+
+        var textNode = document.createTextNode("Hai Box-1 \n");
+        para.append(textNode);
+
+        var list_of_subjects = document.createElement("ul");
+
+        item_1 =  document.createElement("li")
+        item_1_value = document.createTextNode("EDC")
+        item_1.append(item_1_value)
+        
+        item_2 =  document.createElement("li")
+        item_2_value = document.createTextNode("EDC")
+        item_2.append(item_2_value)
+        
+        item_3 =  document.createElement("li")
+        item_3_value = document.createTextNode("EDC")
+        item_3.append(item_3_value)
+        
+
+
+        list_of_subjects.appendChild(item_1);
+        list_of_subjects.appendChild(item_2);
+        list_of_subjects.appendChild(item_3);
+
+        document.getElementById("box-1").append(list_of_subjects);
+        // document.body.append(list_of_subjects);
+
+        var heading = document.createElement("h1");
+        hval = document.createTextNode("Welcome box-1");
+        heading.appendChild(hval);
+
+        document.getElementById("box-1").insertBefore(heading,list_of_subjects)
+        
+
+
+
+    </script>
+</body>
+</html>

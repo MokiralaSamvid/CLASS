@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptArrayMethods-2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>JavaScriptArrayMethods-2</h1>
+
+
+    <script>
+        //forEach
+
+       var numbers=["Zero","one","Two","Three","Four","Five"];
+
+        numbers.forEach(function(x) {
+            console.log(x);
+            document.write(x+"<br>")
+        });
+        numbers.forEach(function(x,index,num) {
+            document.write("<br>"+x+" &nbsp;&nbsp&nbsp;&nbsp"+ index +"&nbsp;&nbsp &nbsp;&nbsp"+ num + "<br>")
+        });
+        document.write("<br>")
+        var values=[10,20,30,40,50,60,70,]
+
+        values.forEach(function(x){
+            document.write("The Square of " + x + " is " + x**2 +"<br>");
+        })
+
+        name1=['s','a','m','v','i','d'];
+        fname="";
+        name1.forEach(element => {
+            fname+=element;
+        });
+
+        document.write("<br> The Full Name is "+fname)
+    
+
+        //map function
+
+        var arr=[1,2,3,4,5,6,7,8];
+        var even=arr.map(function(x){
+            return x*2;
+        })
+        document.write("<br> The map function "+ even)
+
+        var filtered_op = arr.filter(function(x){
+            return x>=5
+        })
+        document.write("<br> The filter function "+ filtered_op)
+
+
+    </script>
+</body>
+</html>

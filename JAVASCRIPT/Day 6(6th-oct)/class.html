@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript ECMA-6 Objects</h1>
+
+    <script>
+        var obj1 = {
+            name:"Rohit",
+            age:32,
+            Address:"Mumbai",
+            team:"MI",
+            Role:"Batsman",
+            Gender:"Male"
+        }
+        var obj2 = {
+            name:"Kohli",
+            age:31,
+            Address:"Banglore",
+            team:"RCB",
+            Role:"Batsman",
+            Gender:"Male"
+        }
+
+        var obj3 ={
+            name:"Dhawan",
+            age:32
+        }
+
+       var newobj = {...obj1,...obj3}
+       console.log(newobj)
+       for(i in newobj){
+        console.log(newobj[i])
+       }
+
+       // perfect example
+
+       var Player={
+        gender:"male",
+        team:"India",
+        role:undefined,
+        name:undefined,
+        age:undefined,
+        position:undefined,
+        style:undefined,
+        
+       }
+      
+       function player(name,age,position,style,role){
+        this.name=name,
+        this.age=age,
+        this.position =position,
+        this.style=style
+        this.role=role
+       }
+
+       let player_1 = new player("Rohit",32,1,"RHB","batsman");
+    //    console.log(player_1)
+       let player_2 = new player("Kohli",30,3,"RHB","batsman");
+       let player_3 = new player("Dhawan",32,2,"LHB","batsman");
+       let player_4 = new player("SKY",32,4,"RHB","batsman");
+       let player_5 = new player("Rahul",29,5,"RHB","Keeper-batsman");
+       let player_6 = new player("Axar",30,6,"LHB","spin-allrounder");
+
+       let player_7 = new player("DK",37,7,"RHB","Big-Hitter")
+       let player_8 = new player("Pandya",27,8,"RHB","Pace-Allrounder")
+       let player_9 = new player("Chahal",27,9,"RHB","Spinner")
+       let player_10 = new player("Bhuvi",30,10,"RHB","Pacer")
+       let player_11 = new player("Bumrah",27,11,"RHB","Pacer")
+
+
+       let batsman_1 = {...Player,...player_1}
+       let batsman_2 = {...Player,...player_2}
+       let batsman_3 = {...Player,...player_3}
+       let batsman_4 = {...Player,...player_4}
+       let batsman_5 = {...Player,...player_5}
+       let batsman_6 = {...Player,...player_6}
+       let batsman_7 = {...Player,...player_7}
+       let batsman_8 = {...Player,...player_8}
+       let batsman_9 = {...Player,...player_9}
+       let batsman_10 = {...Player,...player_10}
+       let batsman_11 = {...Player,...player_11}
+       console.log(player_1)
+       console.log(player_2)
+       console.log(player_3)
+       console.log(player_4)
+       console.log(player_5)
+       console.log(player_6)
+       console.log(player_7)
+       console.log(player_8)
+       console.log(player_9)
+       console.log(player_10)
+       console.log(player_11)
+      
+       var team={batsman_1,batsman_2,batsman_3,batsman_4,batsman_5,batsman_6,batsman_7,batsman_8,batsman_9,batsman_10,batsman_11}
+       console.log(team);
+
+
+       
+  
+
+    </script>
+</body>
+</html>
